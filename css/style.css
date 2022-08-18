@@ -1,8 +1,50 @@
 body{
-    background-color: pink;
+    background-color: rgb(46, 88, 173);
 }
 
-.header{display: inline;}
+.header{
+    background-image: url('../assets/images/Rectangle\ 9.png');
+    width: auto;
+    height: 78px;
+    margin: -9px;
+}
 
-.line { background-color: blue}
+.logo a {
+    padding: 23px 0px 30px 95px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: white;
+    text-decoration: none;
+    font-size: 33px;
+}
+
+.navigationList{
+    margin-left: 69px;
+    padding: 33px 0px 34px 0px;
+}
+
+.navigationList a {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+.iconList{
+    padding: 26px 0px 26px 0px;  
+    float: right;    
+}
+
+.iconList img {
+    margin-left: 49px;
+    margin-right: 26px;
+}
+
+
+ul{ 
+    display: inline;
+    text-transform: uppercase;}
+
+li{
+    display: inline;
+}
 
