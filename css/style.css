@@ -9,8 +9,15 @@ body{
     margin: -9px;
 }
 
-.logo a {
+nav{
+    padding-top: 20px;
+}
+
+.ulLogo {
     padding: 23px 0px 30px 95px;
+}
+
+.logo a {   
     font-weight: bold;
     font-family: 'Poppins';
     color: white;
@@ -20,7 +27,6 @@ body{
 
 .navigationList{
     margin-left: 69px;
-    padding: 33px 0px 34px 0px;
 }
 
 .navigationList a {
@@ -28,15 +34,17 @@ body{
     font-size: 13px;
     color: white;
     text-decoration: none;
+    margin-left: 30px;
 }
 .iconList{
-    padding: 26px 0px 26px 0px;  
+    padding-bottom: 10px;
+    margin-right: 26px;
     float: right;    
 }
 
 .iconList img {
-    margin-left: 49px;
-    margin-right: 26px;
+    padding-bottom: 2;
+    margin-left: 49px;  
 }
 
 
