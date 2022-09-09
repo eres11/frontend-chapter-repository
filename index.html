@@ -1,41 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTPRO TEST PAGE</title>
-    <link rel="stylesheet" href="./css/style.css" >
-</head>
-<body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav">
-            <ul class="ulLogo">
-                <li class="logo"><a href="#">portpro</a></li>
-            </ul>
-            <ul class="navigationList">
-                <li><a href="#">men</a></li>
-                <li><a href="#">women</a></li>
-                <li><a href="#">kids</a></li>
-                <li><a href="#">sports</a></li>
-                <li><a href="#">brands</a></li>
-                <li><a href="#">customize</a></li>
-            </ul>
-            <ul class="iconList">
-                <li><img src="./assets/images/facebook-icon.png" class="facebookIcon" alt="Facebook icon" /></li>
-                <li><img src="./assets/images/tw.png" class="twitterIcon" alt="Twitter icon" /></li>
-                <li><img src="./assets/images/g+.png" class="googlePlusIcon" alt="Google+ icon" /></li>
-                <li><img src="./assets/images/insta.png" class="instagramIcon" alt="Instagram icon" /></li> 
-                <li><img src="./assets/images/cart.png" class="cartIcon" alt="Cart icon" /></li>   
-                <li><img src="./assets/images/search.png" class="searchIcon" alt="Search icon" /></li>   
-            </ul>
-        </nav>
+      <nav class="nav">
+        <ul class="ulLogo">
+          <li class="logo"><a href="#">portpro</a></li>
+        </ul>
+        <ul class="navigationList">
+          <li><a href="#">men</a></li>
+          <li><a href="#">women</a></li>
+          <li><a href="#">kids</a></li>
+          <li><a href="#">sports</a></li>
+          <li><a href="#">brands</a></li>
+          <li><a href="#">customize</a></li>
+        </ul>
+        <ul class="iconList">
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/images/navigation/facebook-icon.png"
+                class="facebookIcon"
+                alt="Facebook icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/images/navigation/tw.png"
+                class="twitterIcon"
+                alt="Twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/images/navigation/g+.png"
+                class="googlePlusIcon"
+                alt="Google+ icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/images/navigation/insta.png"
+                class="instagramIcon"
+                alt="Instagram icon"
+            /></a>
+          </li>
+        </ul>
+        <ul class="buttonList">
+          <li>
+            <button id="cartButton"><img
+                src="./assets/images/navigation/cart.png"
+                class="cartIcon"
+                alt="Cart icon"
+            /></button>
+          </li>
+          <li>
+            <button id="Button"><img
+                src="./assets/images/navigation/search.png"
+                class="searchIcon"
+                alt="Search icon"
+            /></button>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <div>
+      <ul class="shippingList">
+        <li><img src="./assets/images/plane.png" alt=""><h2>free shipping</h2><span>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the</span><a href="#">Click here</a></li>
+        <li><img src="./assets/images/clock.png" alt=""><h2>free shipping</h2><span>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the</span><a href="#">Click here</a></li>
+        <li><img src="./assets/images/circle.png" alt=""><h2>free shipping</h2><span>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the</span><a href="#">Click here</a></li>
+        <li><img src="./assets/images/circle.png" alt=""><h2>free shipping</h2><span>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the</span><a href="#">Click here</a></li>
+      </ul>
+    </div>
 
-    
 
- <!-- header>nav>(ul>li>a)+(ul>li*6>a)+(ul>li*4>img)+(ul>li*2>img) -->
-
-
-</body>
+    <!-- div>ul>li*4>img+span+a -->
+    <!-- header>nav>(ul>li>a)+(ul>li*6>a)+(ul>li*4>img)+(ul>li*2>img) -->
+  </body>
 </html>

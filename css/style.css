@@ -2,31 +2,22 @@ body{
     background-color: rgb(46, 88, 173);
 }
 
-.header{
+.header{  
     background-image: url('../assets/images/Rectangle\ 9.png');
-    width: auto;
-    height: 78px;
-    margin: -9px;
+    padding: 20px 0px 20px 0px;
+}
+nav, nav ul {
+    display: flex;
+    text-transform: uppercase;
 }
 
-nav{
-    padding-top: 20px;
-}
-
-.ulLogo {
-    padding: 23px 0px 30px 95px;
-}
 
 .logo a {   
     font-weight: bold;
     font-family: 'Poppins';
     color: white;
     text-decoration: none;
-    font-size: 33px;
-}
-
-.navigationList{
-    margin-left: 69px;
+    font-size: 33px;   
 }
 
 .navigationList a {
@@ -36,23 +27,69 @@ nav{
     text-decoration: none;
     margin-left: 30px;
 }
-.iconList{
-    padding-bottom: 10px;
-    margin-right: 26px;
-    float: right;    
-}
 
 .iconList img {
     padding-bottom: 2;
     margin-left: 49px;  
 }
 
+.buttonList img {
+    padding-bottom: 2;
+    margin-left: 49px;  
+}
 
-ul{ 
-    display: inline;
-    text-transform: uppercase;}
+.buttonList button {
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+}
 
-li{
-    display: inline;
+
+.shippingList{
+    display: flex;
+}
+
+.shippingList li{
+    background-color: white;
+    border-color: #0d2e57;
+    border: 5px;
+}
+.shippingList h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 33px;
+    font-weight: bold;
+    padding-bottom: 24px;
+    color: rgb(44, 59, 95);
+}
+
+.shippingList span{ 
+    display: block;
+    margin-left: 74px;
+    margin-right: 73px;
+    padding-bottom: 23px;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    color: grey;
+}
+
+.shippingList a{ 
+    
+}
+
+.shippingList img{
+    margin-left: 220px;
+    padding: 80px 0px 50px 0px;
+
+}
+
+.shippingList a{
+    color: #3753da;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 200px;
 }
 
