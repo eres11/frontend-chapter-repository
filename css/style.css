@@ -1,178 +1,225 @@
-body{
-    background-color: rgb(46, 88, 173);
+body {
+  background-color: rgb(46, 88, 173);
 }
 
-.header{  
-    background-image: url('../assets/images/Rectangle\ 9.png');
-    padding: 20px 0px 20px 0px;
+.header {
+  background-image: url("../assets/images/Rectangle\ 9.png");
+  padding: 10px 0px 10px 0px;
 }
-nav, nav ul {
-    display: flex;
-    text-transform: uppercase;
+nav,
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
 }
 
+.menuElements {
+  display: flex;
+  padding-top: 10px;
+}
 
-.logo a {   
-    font-weight: bold;
-    font-family: 'Poppins';
-    color: white;
-    text-decoration: none;
-    font-size: 33px;   
+.navigationIcons {
+  display: flex;
+  gap: 50px;
+  padding-top: 10px;  
+}
+
+.logo a {
+  font-weight: bold;
+  font-family: "Poppins";
+  color: white;
+  text-decoration: none;
+  font-size: 33px;
+  padding-left: 20px;
+}
+
+.navigationList {
+  padding-top: 10px;
 }
 
 .navigationList a {
-    font-family: 'Montserrat';
-    font-size: 13px;
-    color: white;
-    text-decoration: none;
-    margin-left: 30px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.iconList {
+  display: flex;
+  gap: 30px;
 }
 
-.iconList img {
-    padding-bottom: 2;
-    margin-left: 50px; 
-      
-}
-
-.buttonList img {
-    padding-bottom: 2;
-    margin-left: 50px; 
- 
+.buttonList {
+  display: flex;
+  gap: 30px;
+  padding-right: 20px;
 }
 
 .buttonList button {
-    background-color: Transparent;
-    border: none;
-    cursor:pointer;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .shippingList {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
 }
 
-.shippingList li{
-    background-color: white;
-    padding-bottom: 40px;
-    border-color: lightgrey;
-    border-style: solid;
-    border-width: 1px;
+.shippingList li {
+  background-color: white;
+  padding-bottom: 40px;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
 }
-.shippingList h2{
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Bebas Neue';
-    font-size: 25px;
-    font-weight: 510;
-    padding-bottom: 15px;
-    color: rgb(44, 59, 95);
-}
-
-.shippingList span{ 
-    display: block;
-    text-align: center;
-    font-size: 13px;
-    font-family: 'Montserrat';
-    color: grey;
-    padding: 5px 25px 20px 20px;
+.shippingList h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  font-weight: 510;
+  padding-bottom: 15px;
+  color: rgb(44, 59, 95);
 }
 
-.shippingList img{  
-    padding: 25px 0px 25px 0px;
-    width: 44px;
+.shippingList span {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: grey;
+  padding: 5px 25px 20px 20px;
 }
 
-.shippingList a{
-    color: #3753da;
-    font-family: 'Montserrat';
-    text-decoration: none;
-    font-weight: bold;
+.shippingList img {
+  padding: 25px 0px 25px 0px;
+  width: 44px;
+}
+
+.shippingList a {
+  color: #3753da;
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .offerOfTheMonthList {
-    display: flex;  
-
-}
-
-.offerOfTheMonthList li{
-    background-color: rgb(243, 238, 238);
-    height: 600px;
+  display: flex;
+  background-color: rgb(243, 238, 238);
 }
 
 .offerOfTheMonthList img{
-    height: 600px;
-    width: 700px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-h3, h2{
-    text-transform: uppercase;
-    text-align: center;
+h3,
+h2 {
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.offerOfTheMonthList span{ 
-    display: block;
-    text-align: center;
-    font-size: 13px;
-    font-family: 'Montserrat';
-    color: grey;
-    padding: 5px 25px 20px 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+.offerOfTheMonthList span {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: grey;
+  padding: 5px 25px 20px 20px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.offerOfTheMonthList h2{
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Bebas Neue';
-    font-size: 28px;
-    font-weight: 500;
-    padding-bottom: 25px;
-    color: rgb(13, 46, 87);
-    margin-left: 120px;
-    margin-right: 120px;
+.offerOfTheMonthList h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 25px;
+  color: rgb(13, 46, 87);
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
-.offerOfTheMonthList h3{
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: 520;
-    padding-top: 100px;
-    padding-bottom: 25px;
-    color:rgb(97, 97, 97);
+.offerOfTheMonthList h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 520;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  color: rgb(97, 97, 97);
 }
 
-.priceContainer{
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-left: 250px;
+.priceContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-#newPrice{
-    color: rgba(57, 84, 217);
-    font-weight: bold;
-    font-size: 40px;
-    padding-top: 30px;
+#newPrice {
+  color: rgba(57, 84, 217);
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 30px;
 }
 
-#oldPrice{
-    color: black;
-    font-size: 30px;
-    text-decoration: line-through;
-    padding-top: 35px;
+#oldPrice {
+  color: black;
+  font-size: 30px;
+  text-decoration: line-through;
+  padding-top: 35px;
 }
 
-#shopNowButton{
-    display: block;
-    color: white;
-    background-color: rgba(57, 83, 217);
-    border: none;
-    text-transform: uppercase;
-    font-family: 'Montserrat';
-    font-size: 13px;
-    text-align: center;
-    border-radius: 30px;
-    padding: 12px 25px 12px 25px;
+#shopNowButton {
+  color: white;
+  background-color: rgba(57, 83, 217);
+  border: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 13px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 12px 25px 12px 25px;
+}
+
+.buttonContiner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.timerContainer ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+.timerContainer li {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 10px 15px 20px 15px;
+  text-align: center;
+}
+
+.timerContainer p {
+  padding-top: 8px;
+}
+
+#time {
+  font-weight: 550;
+  font-size: 40px;
+}
+
+#dots {
+  padding-top: 0px;
 }

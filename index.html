@@ -11,72 +11,75 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <ul class="ulLogo">
-          <li class="logo"><a href="#">portpro</a></li>
-        </ul>
-        <ul class="navigationList">
-          <li><a href="#">men</a></li>
-          <li><a href="#">women</a></li>
-          <li><a href="#">kids</a></li>
-          <li><a href="#">sports</a></li>
-          <li><a href="#">brands</a></li>
-          <li><a href="#">customize</a></li>
-        </ul>
-
-        <ul class="iconList">
-          <li>
-            <a href="#"
-              ><img
-                src="./assets/images/navigation/facebook-icon.png"
-                class="facebookIcon"
-                alt="Facebook icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="./assets/images/navigation/tw.png"
-                class="twitterIcon"
-                alt="Twitter icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="./assets/images/navigation/g+.png"
-                class="googlePlusIcon"
-                alt="Google+ icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="./assets/images/navigation/insta.png"
-                class="instagramIcon"
-                alt="Instagram icon"
-            /></a>
-          </li>
-        </ul>
-        <ul class="buttonList">
-          <li>
-            <button id="cartButton">
-              <img
-                src="./assets/images/navigation/cart.png"
-                class="cartIcon"
-                alt="Cart icon"
-              />
-            </button>
-          </li>
-          <li>
-            <button id="Button">
-              <img
-                src="./assets/images/navigation/search.png"
-                class="searchIcon"
-                alt="Search icon"
-              />
-            </button>
-          </li>
-        </ul>
+        <div class="menuElements">
+          <ul class="ulLogo">
+            <li class="logo"><a href="#">portpro</a></li>
+          </ul>
+          <ul class="navigationList">
+            <li><a href="#">men</a></li>
+            <li><a href="#">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="#">sports</a></li>
+            <li><a href="#">brands</a></li>
+            <li><a href="#">customize</a></li>
+          </ul>
+        </div>
+        <div class="navigationIcons">
+          <ul class="iconList">
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/navigation/facebook-icon.png"
+                  class="facebookIcon"
+                  alt="Facebook icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/navigation/tw.png"
+                  class="twitterIcon"
+                  alt="Twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/navigation/g+.png"
+                  class="googlePlusIcon"
+                  alt="Google+ icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/navigation/insta.png"
+                  class="instagramIcon"
+                  alt="Instagram icon"
+              /></a>
+            </li>
+          </ul>
+          <ul class="buttonList">
+            <li>
+              <button id="cartButton">
+                <img
+                  src="./assets/images/navigation/cart.png"
+                  class="cartIcon"
+                  alt="Cart icon"
+                />
+              </button>
+            </li>
+            <li>
+              <button id="Button">
+                <img
+                  src="./assets/images/navigation/search.png"
+                  class="searchIcon"
+                  alt="Search icon"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <div>
@@ -129,7 +132,28 @@
             <p id="newPrice">$500</p>
             <p id="oldPrice">$1000</p>
           </div>
-          <button id="shopNowButton">shop now</button>
+          <div class="timerContainer">
+            <ul>
+              <li>
+                <p id="time">09</p>
+                <p id="dots">....</p>
+                <p>hours</p>
+              </li>
+              <li>
+                <p id="time">56</p>
+                <p id="dots">....</p>
+                <p>minutes</p>
+              </li>
+              <li>
+                <p id="time">11</p>
+                <p id="dots">....</p>
+                <p>seconds</p>
+              </li>
+            </ul>
+          </div>
+          <div class="buttonContiner">
+            <button id="shopNowButton">shop now</button>
+          </div>
         </li>
         <li><img src="./assets/images/ImageSportsman.png" alt="" /></li>
       </ul>
