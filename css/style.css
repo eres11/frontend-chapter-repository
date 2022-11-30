@@ -1,8 +1,696 @@
-body{
-    background-color: pink;
+@font-face {
+  font-family: Poppins;
+  src: url(/assets/fonts/Poppins-Regular.ttf);
 }
 
-.header{display: inline;}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(/assets/fonts/Poppins-Bold.ttf);
+}
 
-.line { background-color: blue}
+*{
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.headerImage {
+  background: url(/assets/images/banners/Runner.png);
+  flex-basis: 100%;
+  background-position: 28%;
+  background-size: cover;
+  padding: 350px 0px 150px 0px;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+
+}
+
+.headerImage h1 {
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 120px;
+  display: flex;
+  margin: 0px 0px 0px 150px;
+  line-height: 90px;
+}
+
+.headerImage h2 {
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 0.3em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  margin: 15px 0px 0px 160px;
+}
+
+.headerImage #shopNowButton {
+  margin: 30px 0px 0px 290px;
+}
+
+#clickHereButton {
+  color: white;
+  background-color: rgba(57, 83, 217);
+  border: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 13px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 12px 25px 12px 25px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  /* background-color:  rgba(0, 0, 0);
+  opacity: 0.5; */
+  padding-bottom: 10px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+#burgerMenu{
+  padding: 5px 0px 0px 20px;
+}
+
+#burgerMenu img{
+  padding-right: 30px;
+}
+
+.menuElements {
+  display: flex;
+  padding-top: 10px;
+}
+.nav img{
+  /* width: 30px;
+  height: 35px; */
+}
+
+.navigationIcons {
+  display: flex;
+  gap: 50px;
+  padding-top: 10px;
+}
+
+#logo a {
+  font-weight: bold;
+  font-family: "PoppinsBold";
+  color: white;
+  text-decoration: none;
+  font-size: 33px;
+  padding-left: 30px;
+}
+
+.navigationList {
+  padding-top: 10px;
+}
+
+.navigationList a {
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.iconList {
+  display: flex;
+  gap: 30px;
+  padding-top: 5px;
+}
+
+.iconList img {
+}
+
+.buttonList {
+  display: flex;
+  gap: 30px;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.buttonList img {
+}
+
+.buttonList button {
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.shippingList {
+  display: flex;
+  text-align: center;
+}
+
+.shippingList li {
+  background-color: white;
+  padding-bottom: 40px;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+}
+.shippingList h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  padding-bottom: 15px;
+  color: rgb(44, 59, 95);
+}
+
+.shippingList span {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: grey;
+  padding: 5px 25px 20px 20px;
+}
+
+.shippingList img {
+  padding: 25px 0px 25px 0px;
+  width: 44px;
+}
+
+.shippingList a {
+  color: #3753da;
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.offerOfTheMonthList {
+  display: flex;
+  background-color: rgb(243, 238, 238);
+}
+
+#sportsman {
+  background: url(/assets/images/banners/ImageSportsman.png);
+  flex-basis: 100%;
+  background-position: 28%;
+  background-size: cover;
+}
+
+h3,
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.offerOfTheMonthList span {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: grey;
+  padding: 5px 25px 20px 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.offerOfTheMonthList h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 25px;
+  color: rgb(13, 46, 87);
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.offerOfTheMonthList h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  color: rgb(97, 97, 97);
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#newPrice {
+  color: rgba(57, 84, 217);
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+#oldPrice {
+  color: black;
+  font-size: 30px;
+  text-decoration: line-through;
+  padding-top: 35px;
+}
+
+#shopNowButton {
+  color: white;
+  background-color: rgba(57, 83, 217);
+  border: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 13px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 12px 25px 12px 25px;
+}
+
+.buttonContiner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.timerContainer ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+.timerContainer li {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+  width: 90px;
+}
+
+.timerContainer p {
+  padding-top: 8px;
+}
+
+#time {
+  font-size: 40px;
+}
+
+#timeUnit{
+  font-size: small;
+}
+
+#dots {
+  padding-top: 0px;
+}
+
+#offerContainer {
+  margin: -80px 100px 0px 80px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.itemList {
+  display: flex;
+  text-align: center;
+}
+
+.itemList li {
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 20px;
+  width: 100%;
+  padding-top: 30px;
+}
+.itemList h2 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: rgb(44, 59, 95);
+  text-align: left;
+  padding: 10px 0px 0px 30px;
+}
+
+.itemList img {
+  max-width: 270px;
+  max-height: 150px;
+}
+
+.itemList .priceContainer {
+  justify-content: flex-start;
+  margin-top: -5px;
+  padding: 0px 0px 20px 30px;
+  gap: 10px;
+}
+
+.itemList #newPrice {
+  font-weight: 550;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.itemList #oldPrice {
+  font-size: 12px;
+  padding-top: 15px;
+  color: rgb(129, 129, 129);
+}
+
+.bannerList {
+  display: flex;
+}
+
+.bannerList li {
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  width: 25%;
+}
+
+.bannerList .priceContainer {
+  justify-content: flex-start;
+  margin-top: -5px;
+  padding: 0px 0px 20px 30px;
+  gap: 10px;
+}
+
+.bannerList #newPrice {
+  font-weight: 550;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#glassesBox img {
+  max-width: 220px;
+}
+
+.bannerList #glassesBox {
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 20px;
+  width: 25%;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.bannerList #oldPrice {
+  font-size: 12px;
+  padding-top: 15px;
+  color: rgb(129, 129, 129);
+}
+
+#discountBox {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  width: 25%;
+}
+
+#discountBox h2 {
+  font-size: 45px;
+  padding-top: 40px;
+  margin-left: 50px;
+  text-align: left;
+  font-family: "Bebas Neue";
+}
+
+#discountBox p {
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 0.3em;
+  font-size: 14px;
+  padding-top: 10px;
+  margin-left: 50px;
+  text-align: left;
+  line-height: 20px;
+}
+
+#discountBox #clickHereButton {
+  margin: 20px 0px 30px 50px;
+}
+
+#runBannerBox #shopNowButton {
+  margin: 20px 0px 30px 50px;
+  color: black;
+  background-color: aqua;
+}
+
+#glassesBox h2 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: rgb(44, 59, 95);
+  text-align: left;
+  padding: 10px 0px 0px 30px;
+}
+
+#runBannerBox {
+  background: url(/assets/images/banners/Layer\ 17.png);
+  flex-grow: 1;
+  width: 50%;
+  background-size: cover;
+}
+
+#runBannerBox h2 {
+  color: white;
+  font-size: 55px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  padding-top: 15px;
+  margin-left: 40px;
+  text-align: left;
+  font-family: "Bebas Neue";
+}
+
+#clickHereBanner {
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(55, 83, 218);
+  padding: 20px 0px 20px 0px;
+}
+
+#companiesLogoContainer {
+  margin: 0px 100px 0px 80px;
+}
+
+#logoList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+#logoList li{
+  position: relative;
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  width: 16.6666666%;
+}
+
+#logoList li:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#logoList img {
+  padding: 30px 30px 30px 30px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#discipilnesGallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#discipilnesGallery li {
+  width: 25%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+#discipilnesGallery img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.56;
+}
+
+.footer {
+  background: url(/assets/images/Footer\ BG.png);
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin-top: -100px;
+}
+
+.footerContainer {
+  display: flex;
+  padding-left: 30px;
+  margin: 0px 100px 0px 80px;
+  gap: 100px;
+}
+
+.footerContainer h4 {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 25px;
+  color: rgb(55, 83, 218);
+  padding-bottom: 30px;
+}
+
+.shopLinks {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.shopLinks a {
+  font-family: "Poppins";
+  color: white;
+  text-decoration: none;
+  padding-top: 13px;
+}
+
+.informationLinks {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.informationLinks a {
+  font-family: "Poppins";
+  color: white;
+  text-decoration: none;
+  padding-top: 13px;
+}
+
+.customerServiceLinks {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.customerServiceLinks a {
+  font-family: "Poppins";
+  color: white;
+  text-decoration: none;
+  padding-top: 13px;
+}
+
+.socialIcons ul {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter {
+  padding-top: 50px;
+}
+
+.newsletter h4 {
+  padding-bottom: 10px;
+}
+
+#emailInput {
+  color: white;
+  background-color: rgb(61, 63, 72);
+  border: none;
+  border-radius: 30px;
+  font-size: 25px;
+  width: 80%;
+  padding-left: 15px;
+  outline-color: white;
+}
+
+.newsletter #shopNowButton {
+  margin-top: 20px;
+}
+
+.rightsContainer {
+  display: flex;
+}
+
+.separator {
+  box-sizing: border-box;
+  margin: 80px 100px 0px 80px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+  width: 100%;
+}
+
+.rights{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 100px 0px 80px;
+  color: rgb(255, 255, 255);
+}
+
+.rightsSection{
+  color: black;
+  opacity: 0.5;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(0, 0, 0);
+}
+
+#glassesBox:hover .overlay {
+  opacity: 0.7;
+}
+
+#glassesBox #shopNowButton{
+  opacity: 1;
+}
+
+#glassesBox{
+  position: relative;
+}
+
+.overlay #shopNowButton{
+  top: 40%;
+  opacity: 1;
+  position: relative;
+}
