@@ -81,39 +81,31 @@ img {
 .nav {
   display: flex;
   justify-content: space-between;
-  /* background-color:  rgba(0, 0, 0);
-  opacity: 0.5; */
-  padding-bottom: 10px;
 }
 
 .nav ul {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-}
-
-#burgerMenu{
-  padding: 5px 0px 0px 20px;
+  border-left: 1px solid grey;
 }
 
 #burgerMenu img{
-  padding-right: 30px;
+  padding: 15px 20px 15px 20px
 }
 
 .menuElements {
   display: flex;
-  padding-top: 10px;
-}
-.nav img{
-  /* width: 30px;
-  height: 35px; */
 }
 
 .navigationIcons {
   display: flex;
-  gap: 50px;
-  padding-top: 10px;
 }
+
+#logo{
+  padding: 15px 20px 15px 0px
+}
+
 
 #logo a {
   font-weight: bold;
@@ -124,8 +116,12 @@ img {
   padding-left: 30px;
 }
 
-.navigationList {
+.navigationList{
   padding-top: 10px;
+}
+
+.navigationList li{
+  padding: 15px 10px 0px 0px
 }
 
 .navigationList a {
@@ -138,23 +134,16 @@ img {
 .iconList {
   display: flex;
   gap: 30px;
-  padding-top: 5px;
-}
-
-.iconList img {
+  padding: 15px 30px 0px 20px;
 }
 
 .buttonList {
   display: flex;
-  gap: 30px;
-  padding-right: 20px;
-  padding-top: 5px;
 }
 
-.buttonList img {
-}
 
 .buttonList button {
+  padding: 15px 20px 0px 20px;
   background-color: Transparent;
   border: none;
   cursor: pointer;
@@ -526,10 +515,11 @@ h2 {
 }
 
 #logoList img {
-  padding: 30px 30px 30px 30px;
+  padding: 20% 0% 0% 20%; 
   position: absolute;
-  width: 100%;
-  height: 100%;
+  height: 70%;
+  width: 80%;
+  filter: grayscale(100%);
 }
 
 #discipilnesGallery{
