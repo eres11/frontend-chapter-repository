@@ -1,0 +1,68 @@
+.navigation {
+  display: flex;
+  text-transform: uppercase;
+  height: 55px;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+}
+
+.navigation__links {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__burger-icon {
+  padding: 0px 20px 0px 20px;
+}
+
+.navigation__logo-link {
+  font-weight: bold;
+  font-family: "PoppinsBold";
+  color: white;
+  text-decoration: none;
+  font-size: 33px;
+  padding: 0px 20px 0px 20px;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+.navigation__categories {
+  display: flex;
+}
+
+.navigation__link {
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.navigation__icons {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid grey;
+}
+
+.navigation__social-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 40px 0px 30px;
+}
+
+.navigation__cart-button {
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0px 20px 0px 0px;
+}
+
+.navigation__search-button {
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0px 20px 0px 0px;
+}

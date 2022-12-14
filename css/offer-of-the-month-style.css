@@ -1,0 +1,103 @@
+.offer-of-the-month {
+  display: flex;
+  background-color: rgb(243, 238, 238);
+}
+
+.offer-of-the-month__sportsman {
+  background: url(/assets/images/banners/ImageSportsman.png);
+  flex-basis: 100%;
+  background-position: 28%;
+  background-size: cover;
+}
+
+.offer-of-the-month__description {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: grey;
+  padding: 5px 25px 20px 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.offer-of-the-month__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 25px;
+  color: rgb(13, 46, 87);
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.offer-of-the-month__subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  color: rgb(97, 97, 97);
+}
+
+.offer-of-the-month__price-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offer-of-the-month__new-price {
+  color: rgba(57, 84, 217);
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.offer-of-the-month__old-price {
+  color: black;
+  font-size: 30px;
+  text-decoration: line-through;
+  padding-top: 35px;
+}
+
+.offer-of-the-month__countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+.offer-of-the-month__time-item {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+  width: 90px;
+}
+
+.offer-of-the-month__time {
+  font-size: 40px;
+  padding-top: 8px;
+}
+
+.offer-of-the-month__time-unit {
+  font-size: small;
+  padding-top: 8px;
+}
+
+.offer-of-the-month__dots {
+  padding-top: 8px;
+}
+
+.offer-of-the-month__shop-now-button-continer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}

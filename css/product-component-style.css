@@ -1,0 +1,44 @@
+.product {
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 20px;
+  width: 100%;
+  padding-top: 30px;
+}
+.product__name {
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: rgb(44, 59, 95);
+  text-align: left;
+  padding: 10px 0px 0px 30px;
+}
+
+.product__image {
+  max-width: 270px;
+  max-height: 150px;
+}
+
+.product__price {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -5px;
+  padding: 0px 0px 20px 30px;
+  gap: 10px;
+}
+
+.product__new-price {
+  color: rgba(57, 84, 217);
+  font-weight: 550;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.product__old-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  padding-top: 15px;
+  color: rgb(129, 129, 129);
+}

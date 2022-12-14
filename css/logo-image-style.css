@@ -1,0 +1,22 @@
+.comanies-logo__item{
+    position: relative;
+    background-color: white;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 16.6666666%;
+  }
+  
+  .comanies-logo__item:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  .comanies-logo__image {
+    padding: 20% 0% 0% 20%; 
+    position: absolute;
+    height: 70%;
+    width: 80%;
+    filter: grayscale(100%);
+  }

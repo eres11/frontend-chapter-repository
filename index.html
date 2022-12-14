@@ -7,6 +7,15 @@
     <title>PORTPRO TEST PAGE</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navigation-style.css" />
+    <link rel="stylesheet" href="./css/header-style.css" />
+    <link rel="stylesheet" href="./css/shipping-component-style.css" />
+    <link rel="stylesheet" href="./css/offer-of-the-month-style.css" />
+    <link rel="stylesheet" href="./css/product-component-style.css" />
+    <link rel="stylesheet" href="./css/logo-image-style.css" />
+    <link rel="stylesheet" href="./css/discipilnes-gallery-style.css" />
+    <link rel="stylesheet" href="./css/footer-style.css" />
+    <link rel="stylesheet" href="./css/shop-now-button-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,207 +24,245 @@
     />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <div class="menuElements">
-          <div id="burgerMenu">
+    <nav class="navigation">
+      <div class="navigation__links">
+        <div class="navigation__burger-menu">
+          <a #
+            ><img
+              class="navigation__burger-icon"
+              src="./assets/images/navigation/icon.png"
+              alt="burger menu icon"
+          /></a>
+        </div>
+        <div class="navigation__logo">
+          <a class="navigation__logo-link" href="#">portpro</a>
+        </div>
+        <div>
+          <ul class="navigation__categories">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#men">men</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">women</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">kids</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">sports</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">brands</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">customize</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation__icons">
+        <ul class="navigation__social-icons">
+          <li class="navigation__facebook-icon">
             <a href="#"
-              ><img src="./assets/images/navigation/icon.png" alt="Menu icon"
+              ><img
+                src="./assets/images/navigation/facebook-icon.png"
+                alt="facebook icon"
             /></a>
-          </div>
-          <ul class="ulLogo">
-            <li id="logo"><a href="#">portpro</a></li>
-          </ul>
-          <ul class="navigationList">
-            <li><a href="#men">men</a></li>
-            <li><a href="#">women</a></li>
-            <li><a href="#">kids</a></li>
-            <li><a href="#">sports</a></li>
-            <li><a href="#">brands</a></li>
-            <li><a href="#">customize</a></li>
-          </ul>
+          </li>
+          <li class="navigation__twitter-icon">
+            <a href="#"
+              ><img src="./assets/images/navigation/tw.png" alt="Twitter icon"
+            /></a>
+          </li>
+          <li class="navigation__google-icon">
+            <a href="#"
+              ><img src="./assets/images/navigation/g+.png" alt="Google+ icon"
+            /></a>
+          </li>
+          <li class="navigation__instagram-icon">
+            <a href="#"
+              ><img
+                src="./assets/images/navigation/insta.png"
+                alt="Instagram icon"
+            /></a>
+          </li>
+        </ul>
+        <div class=".navigation__buttons">
+          <button class="navigation__cart-button">
+            <img
+              class="navigation__cart-icon"
+              src="./assets/images/navigation/cart.png"
+              alt="cart icon"
+            />
+          </button>
         </div>
-        <div class="navigationIcons">
-          <ul class="iconList">
-            <li>
-              <a href="#"
-                ><img
-                  src="./assets/images/navigation/facebook-icon.png"
-                  class="facebookIcon"
-                  alt="Facebook icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./assets/images/navigation/tw.png"
-                  class="twitterIcon"
-                  alt="Twitter icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./assets/images/navigation/g+.png"
-                  class="googlePlusIcon"
-                  alt="Google+ icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./assets/images/navigation/insta.png"
-                  class="instagramIcon"
-                  alt="Instagram icon"
-              /></a>
-            </li>
-          </ul>
-          <ul class="buttonList">
-            <li>
-              <button id="cartButton">
-                <img
-                  src="./assets/images/navigation/cart.png"
-                  class="cartIcon"
-                  alt="Cart icon"
-                />
-              </button>
-            </li>
-          </ul>
-          <ul class="buttonList">
-            <li>
-              <button id="Button">
-                <img
-                  src="./assets/images/navigation/search.png"
-                  class="searchIcon"
-                  alt="Search icon"
-                />
-              </button>
-            </li>
-          </ul>
+        <div>
+          <button class="navigation__search-button">
+            <img
+              class="navigation__search-icon"
+              src="./assets/images/navigation/search.png"
+              alt="search icon"
+            />
+          </button>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header__image">
+        <h1 class="header__title">
+          nike <br />
+          shoes
+        </h1>
+        <h2 class="header__subtitle">sign up now and get 50% off</h2>
+        <button class="shop-now-button">shop now</button>
+      </div>
     </header>
-    <div class="headerImage">
-      <img src="" alt="" />
-      <h1>
-        nike <br />
-        shoes
-      </h1>
-      <h2>sign up now and get 50% off</h2>
-      <button id="shopNowButton">shop now</button>
-    </div>
 
-    <div id="offerContainer">
+    <div class="offer-container">
       <section>
-        <ul class="shippingList">
-          <li>
-            <img src="./assets/images/plane.png" alt="" />
-            <h2>free shipping</h2>
-            <span
+        <ul class="shipping">
+          <li class="shipping__item">
+            <img
+              class="shipping__image"
+              src="./assets/images/plane.png"
+              alt=""
+            />
+            <h2 class="shipping__title">free shipping</h2>
+            <span class="shipping__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the</span
-            ><a href="#">Click here</a>
+            ><a class="shipping__click-here-link" href="#">Click here</a>
           </li>
-          <li>
-            <img src="./assets/images/clock.png" alt="" />
-            <h2>free shipping</h2>
-            <span
+          <li class="shipping__item">
+            <img
+              class="shipping__image"
+              src="./assets/images/clock.png"
+              alt=""
+            />
+            <h2 class="shipping__title">free shipping</h2>
+            <span class="shipping__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the</span
-            ><a href="#">Click here</a>
+            ><a class="shipping__click-here-link" href="#">Click here</a>
           </li>
-          <li>
-            <img src="./assets/images/circle.png" alt="" />
-            <h2>free shipping</h2>
-            <span
+          <li class="shipping__item">
+            <img
+              class="shipping__image"
+              src="./assets/images/circle.png"
+              alt=""
+            />
+            <h2 class="shipping__title">free shipping</h2>
+            <span class="shipping__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the</span
-            ><a href="#">Click here</a>
+            ><a class="shipping__click-here-link" href="#">Click here</a>
           </li>
-          <li>
-            <img src="./assets/images/circle.png" alt="" />
-            <h2>free shipping</h2>
-            <span
+          <li class="shipping__item">
+            <img
+              class="shipping__image"
+              src="./assets/images/circle.png"
+              alt=""
+            />
+            <h2 class="shipping__title">free shipping</h2>
+            <span class="shipping__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the</span
-            ><a href="#">Click here</a>
+            ><a class="shipping__click-here-link" href="#">Click here</a>
           </li>
         </ul>
       </section>
-      <section id="men">
-        <section class="offerOfTheMonthList">
+      <section>
+        <div class="offer-of-the-month">
           <div>
-            <h3>offer of the month</h3>
-            <h2>phantom vison elite dynamic</h2>
-            <span
+            <h3 class="offer-of-the-month__subtitle">offer of the month</h3>
+            <h2 class="offer-of-the-month__title">
+              phantom vison elite dynamic
+            </h2>
+            <span class="offer-of-the-month__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the industry's Lorem Ipsum is
               simply dummy text of the</span
             >
-            <div class="priceContainer">
-              <p id="newPrice">$500</p>
-              <p id="oldPrice">$1000</p>
+            <div class="offer-of-the-month__price-container">
+              <p class="offer-of-the-month__new-price">$500</p>
+              <p class="offer-of-the-month__old-price">$1000</p>
             </div>
-            <div class="timerContainer">
-              <ul>
-                <li>
-                  <p id="time">09</p>
-                  <p id="dots">....</p>
-                  <p id="timeUnit">hours</p>
+            <div class="offer-of-the-month__timer-container">
+              <ul class="offer-of-the-month__countdown">
+                <li class="offer-of-the-month__time-item">
+                  <p class="offer-of-the-month__time">09</p>
+                  <p class="offer-of-the-month__dots">....</p>
+                  <p class="offer-of-the-month__time-unit">hours</p>
                 </li>
-                <li>
-                  <p id="time">56</p>
-                  <p id="dots">....</p>
-                  <p id="timeUnit">minutes</p>
+                <li class="offer-of-the-month__time-item">
+                  <p class="offer-of-the-month__time">56</p>
+                  <p class="offer-of-the-month__dots">....</p>
+                  <p class="offer-of-the-month__time-unit">minutes</p>
                 </li>
-                <li>
-                  <p id="time">11</p>
-                  <p id="dots">....</p>
-                  <p id="timeUnit">seconds</p>
+                <li class="offer-of-the-month__time-item">
+                  <p class="offer-of-the-month__time">11</p>
+                  <p class="offer-of-the-month__dots">....</p>
+                  <p class="offer-of-the-month__time-unit">seconds</p>
                 </li>
               </ul>
             </div>
-            <div class="buttonContiner">
-              <button id="shopNowButton">shop now</button>
+            <div class="offer-of-the-month__shop-now-button-continer">
+              <button class="shop-now-button">shop now</button>
             </div>
           </div>
-          <div id="sportsman">
+          <div class="offer-of-the-month__sportsman">
             <img src="" alt="" />
           </div>
-        </section>
+        </div>
       </section>
       <section>
-        <ul class="itemList">
-          <li>
-            <img src="./assets/images/items/Layer 7.png" alt="" />
-            <h2>stefan janoski max</h2>
-            <div class="priceContainer">
-              <p id="newPrice">$ 100.00</p>
-              <p id="oldPrice">$ 200</p>
+        <ul class="item-list">
+          <li class="product">
+            <img
+              class="product__image"
+              src="./assets/images/items/Layer 7.png"
+              alt=""
+            />
+            <h2 class="product__name">stefan janoski max</h2>
+            <div class="product__price">
+              <p class="product__new-price">$ 100.00</p>
+              <p class="product__old-price">$ 200</p>
             </div>
           </li>
-          <li>
-            <img src="./assets/images/items/Layer 4.png" alt="" />
-            <h2>vandal high supreme</h2>
-            <div class="priceContainer">
-              <p id="newPrice">$ 100.00</p>
-              <p id="oldPrice">$ 200</p>
+          <li class="product">
+            <img
+              class="product__image"
+              src="./assets/images/items/Layer 4.png"
+              alt=""
+            />
+            <h2 class="product__name">vandal high supreme</h2>
+            <div class="product__price">
+              <p class="product__new-price">$ 100.00</p>
+              <p class="product__old-price">$ 200</p>
             </div>
           </li>
-          <li>
-            <img src="./assets/images/items/Layer 5.png" alt="" />
-            <h2>new zoom</h2>
-            <div class="priceContainer">
-              <p id="newPrice">$ 100.00</p>
-              <p id="oldPrice">$ 200</p>
+          <li class="product">
+            <img
+              class="product__image"
+              src="./assets/images/items/Layer 5.png"
+              alt=""
+            />
+            <h2 class="product__name">new zoom</h2>
+            <div class="product__price">
+              <p class="product__new-price">$ 100.00</p>
+              <p class="product__old-price">$ 200</p>
             </div>
           </li>
-          <li>
-            <img src="./assets/images/items/Layer 6.png" alt="" />
-            <h2>fit shoes</h2>
-            <div class="priceContainer">
-              <p id="newPrice">$ 100.00</p>
-              <p id="oldPrice">$ 200</p>
+          <li class="product">
+            <img
+              class="product__image"
+              src="./assets/images/items/Layer 6.png"
+              alt=""
+            />
+            <h2 class="product__name">fit shoes</h2>
+            <div class="product__price">
+              <p class="product__new-price">$ 100.00</p>
+              <p class="product__old-price">$ 200</p>
             </div>
           </li>
         </ul>
@@ -226,7 +273,7 @@
               sign up now and <br />
               get 50% off
             </p>
-            <button id="clickHereButton">click here</button>
+            <button class="click-here-button">click here</button>
           </li>
           <li id="glassesBox">
             <img src="./assets/images/items/Image (4).png" alt="" />
@@ -236,7 +283,7 @@
               <p id="oldPrice">$ 200</p>
             </div>
             <div class="overlay">
-              <button id="shopNowButton">shop now</button>
+              <button class="shop-now-button">shop now</button>
             </div>
           </li>
           <li id="runBannerBox">
@@ -245,116 +292,211 @@
               eat, sleep <br />
               and repeat
             </h2>
-            <button id="shopNowButton">shop now</button>
+            <button class="shop-now-button">shop now</button>
           </li>
         </ul>
-        <ul class="itemList">
-          <li>
-            <img src="./assets/images/items/Layer 3.png" alt="" />
-            <h2>apple watch</h2>
-            <div class="priceContainer">
-              <p id="newPrice">$ 100.00</p>
-              <p id="oldPrice">$ 200</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/items/Layer 7 copy.png" alt="" />
-            <h2>sport shoe</h2>
-            <div class="priceContainer">
-              <p id="newPrice">$ 100.00</p>
-              <p id="oldPrice">$ 200</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/items/Layer 6 copy.png" alt="" />
-            <h2>men shoe</h2>
-            <div class="priceContainer">
-              <p id="newPrice">$ 100.00</p>
-              <p id="oldPrice">$ 200</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/items/Layer 4 copy.png" alt="" />
-            <h2>girl shoes</h2>
-            <div class="priceContainer">
-              <p id="newPrice">$ 100.00</p>
-              <p id="oldPrice">$ 200</p>
-            </div>
-          </li>
-        </ul>
-        <div id="clickHereBanner">click here</div>
-        <ul id="discipilnesGallery">
-          <li>
+        <ul class="item-list">
+          <li class="product">
             <img
+              class="product__image"
+              src="./assets/images/items/Layer 3.png"
+              alt=""
+            />
+            <h2 class="product__name">apple watch</h2>
+            <div class="product__price">
+              <p class="product__new-price">$ 100.00</p>
+              <p class="product__old-price">$ 200</p>
+            </div>
+          </li>
+          <li class="product">
+            <img
+              class="product__image"
+              src="./assets/images/items/Layer 7 copy.png"
+              alt=""
+            />
+            <h2 class="product__name">sport shoe</h2>
+            <div class="product__price">
+              <p class="product__new-price">$ 100.00</p>
+              <p class="product__old-price">$ 200</p>
+            </div>
+          </li>
+          <li class="product">
+            <img
+              class="product__image"
+              src="./assets/images/items/Layer 6 copy.png"
+              alt=""
+            />
+            <h2 class="product__name">men shoe</h2>
+            <div class="product__price">
+              <p class="product__new-price">$ 100.00</p>
+              <p class="product__old-price">$ 200</p>
+            </div>
+          </li>
+          <li class="product">
+            <img
+              class="product__image"
+              src="./assets/images/items/Layer 4 copy.png"
+              alt=""
+            />
+            <h2 class="product__name">girl shoes</h2>
+            <div class="product__price">
+              <p class="product__new-price">$ 100.00</p>
+              <p class="product__old-price">$ 200</p>
+            </div>
+          </li>
+        </ul>
+        <div class="click-here-banner">click here</div>
+        <ul class="discipilnes-gallery">
+          <li class="discipilnes-gallery__item">
+            <img
+              class="discipilnes-gallery__image"
               src="./assets/images/sportsDisciplinePhotos/Warstwa 1.jpg"
               alt=""
             />
           </li>
-          <li>
+          <li class="discipilnes-gallery__item">
             <img
+              class="discipilnes-gallery__image"
               src="./assets/images/sportsDisciplinePhotos/Image (1).jpg"
               alt=""
             />
           </li>
-          <li>
+          <li class="discipilnes-gallery__item">
             <img
+              class="discipilnes-gallery__image"
               src="./assets/images/sportsDisciplinePhotos/Image.jpg"
               alt=""
             />
           </li>
-          <li>
+          <li class="discipilnes-gallery__item">
             <img
+              class="discipilnes-gallery__image"
               src="./assets/images/sportsDisciplinePhotos/Image (2).jpg"
               alt=""
             />
           </li>
-          <li>
+          <li class="discipilnes-gallery__item">
             <img
+              class="discipilnes-gallery__image"
               src="./assets/images/sportsDisciplinePhotos/Shape.jpg"
               alt=""
             />
           </li>
-          <li>
+          <li class="discipilnes-gallery__item">
             <img
+              class="discipilnes-gallery__image"
               src="./assets/images/sportsDisciplinePhotos/Image (3).jpg"
               alt=""
             />
           </li>
-          <li>
+          <li class="discipilnes-gallery__item">
             <img
+              class="discipilnes-gallery__image"
               src="./assets/images/sportsDisciplinePhotos/Image (4).jpg"
               alt=""
             />
           </li>
-          <li>
+          <li class="discipilnes-gallery__item">
             <img
+              class="discipilnes-gallery__image"
               src="./assets/images/sportsDisciplinePhotos/Image (5).jpg"
               alt=""
             />
           </li>
         </ul>
-        <ul id="logoList">
-          <li><img src="./assets/images/logos/brand-logo.png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo (1).png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo (2).png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo (3).png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo.png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo (1).png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo (2).png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo (3).png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo.png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo (1).png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo (2).png" alt="" /></li>
-          <li><img src="./assets/images/logos/brand-logo (3).png" alt="" /></li>
+        <ul class="comanies-logo">
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo.png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo (1).png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo (2).png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo (3).png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo.png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo (1).png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo (2).png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo (3).png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo.png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo (1).png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo (2).png"
+              alt=""
+            />
+          </li>
+          <li class="comanies-logo__item">
+            <img
+              class="comanies-logo__image"
+              src="./assets/images/logos/brand-logo (3).png"
+              alt=""
+            />
+          </li>
         </ul>
       </section>
     </div>
-
     <footer class="footer">
-      <div class="footerContainer">
+      <div class="footer__footer-container">
         <div>
           <h4>shops</h4>
-          <div class="shopLinks">
+          <div class="footer__shop-links">
             <a href="#">New in</a>
             <a href="#">Women</a>
             <a href="#">Schuhe Shoes</a>
@@ -367,7 +509,7 @@
         </div>
         <div>
           <h4>information</h4>
-          <div class="informationLinks">
+          <div class="footer__information-links">
             <a href="#">About us</a>
             <a href="#">Customer Service</a>
             <a href="#">New Collection</a>
@@ -380,7 +522,7 @@
         </div>
         <div>
           <h4>customer service</h4>
-          <div class="customerServiceLinks">
+          <div class="footer__customer-service-links">
             <a href="#">Search Terms</a>
             <a href="#">Advanced Search</a>
             <a href="#">Orders and Returns</a>
@@ -393,7 +535,7 @@
         </div>
         <div>
           <h4>stay connected</h4>
-          <div class="socialIcons">
+          <div class="footer__social-icons">
             <ul>
               <li>
                 <img src="./assets/images/footer/socialIcons/G.png" alt="" />
@@ -415,31 +557,28 @@
               </li>
             </ul>
           </div>
-          <div class="newsletter">
+          <div class="footer__newsletter">
             <h4>newsletter sign up</h4>
-            <input type="text" id="emailInput" />
-            <button id="shopNowButton">shop now</button>
+            <input type="text" class="footer__email-input" />
+            <button class="shop-now-button">shop now</button>
           </div>
         </div>
       </div>
-      <div class="rightsSection">
-        <div class="rightsContainer">
-          <hr class="separator" />
+      <div class="footer__rights-section">
+        <div>
+          <hr class="footer__separator" />
         </div>
-        <section class="rights">
-          <div class="psdRights">
+        <section class="footer__rights">
+          <div class="footer__psd-rights">
             © 2022 PSDfreebies.com | All Rights Reserved. <br />Free PSD Themes
             & Templates by PSDFreebies.com
           </div>
 
-          <div class="cardsIcons">
+          <div class="footer__card-icons">
             <img src="./assets/images/footer/cardIcons.png" alt="" />
           </div>
         </section>
       </div>
     </footer>
-
-    <!-- div>ul>li*4>img+span+a -->
-    <!-- header>nav>(ul>li>a)+(ul>li*6>a)+(ul>li*4>img)+(ul>li*2>img) -->
   </body>
 </html>
