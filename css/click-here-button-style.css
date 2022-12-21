@@ -1,15 +1,11 @@
-.shop-now-button {
+.click-here-button {
     color: white;
     background-color: rgba(57, 83, 217);
     border: none;
     text-transform: uppercase;
     font-family: "Montserrat";
     font-size: 13px;
+    text-align: center;
     border-radius: 30px;
     padding: 12px 25px 12px 25px;
-  }
-
-  .shop-now-button--aqua{
-    background-color: aqua;
-    color: black;
   }

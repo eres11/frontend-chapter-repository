@@ -1,0 +1,91 @@
+.banner-list {
+  display: flex;
+  text-align: center;
+}
+
+.banner-list .product {
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  width: 25%;
+  position: relative;
+}
+
+.banner-list .product__image {
+  max-width: 220px;
+  padding-bottom: 25px;
+}
+
+.banner-list__discount-box {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  width: 25%;
+}
+
+.banner-list__discount-title {
+  font-size: 45px;
+  padding-top: 40px;
+  margin-left: 50px;
+  text-align: left;
+  font-family: "Bebas Neue";
+}
+
+.banner-list__discount-description {
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 0.3em;
+  font-size: 14px;
+  padding-top: 10px;
+  margin-left: 50px;
+  text-align: left;
+  line-height: 20px;
+}
+
+.banner-list .click-here-button {
+  margin: 20px 0px 30px -60px;
+}
+
+.banner-list__runner-box {
+  background: url(/assets/images/banners/Layer\ 17.png);
+  flex-grow: 1;
+  width: 50%;
+  background-size: cover;
+}
+
+.banner-list__runner-title {
+  color: white;
+  font-size: 55px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  padding-top: 15px;
+  margin-left: 40px;
+  text-align: left;
+  font-family: "Bebas Neue";
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(0, 0, 0);
+}
+
+.banner-list .product:hover .overlay {
+  opacity: 0.7;
+}
+
+
+
+.overlay .shop-now-button {
+  top: 40%;
+  /* opacity: 1; */
+  position: relative;
+}

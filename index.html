@@ -6,16 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTPRO TEST PAGE</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/navigation-style.css" />
-    <link rel="stylesheet" href="./css/header-style.css" />
-    <link rel="stylesheet" href="./css/shipping-component-style.css" />
-    <link rel="stylesheet" href="./css/offer-of-the-month-style.css" />
-    <link rel="stylesheet" href="./css/product-component-style.css" />
-    <link rel="stylesheet" href="./css/logo-image-style.css" />
-    <link rel="stylesheet" href="./css/discipilnes-gallery-style.css" />
-    <link rel="stylesheet" href="./css/footer-style.css" />
-    <link rel="stylesheet" href="./css/shop-now-button-style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -87,7 +78,7 @@
             /></a>
           </li>
         </ul>
-        <div class=".navigation__buttons">
+        <div class="navigation__buttons">
           <button class="navigation__cart-button">
             <img
               class="navigation__cart-icon"
@@ -128,7 +119,7 @@
               alt=""
             />
             <h2 class="shipping__title">free shipping</h2>
-            <span class="shipping__description"
+            <span class="description-text shipping__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the</span
             ><a class="shipping__click-here-link" href="#">Click here</a>
@@ -140,7 +131,7 @@
               alt=""
             />
             <h2 class="shipping__title">free shipping</h2>
-            <span class="shipping__description"
+            <span class="description-text shipping__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the</span
             ><a class="shipping__click-here-link" href="#">Click here</a>
@@ -152,7 +143,7 @@
               alt=""
             />
             <h2 class="shipping__title">free shipping</h2>
-            <span class="shipping__description"
+            <span class="description-text shipping__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the</span
             ><a class="shipping__click-here-link" href="#">Click here</a>
@@ -164,7 +155,7 @@
               alt=""
             />
             <h2 class="shipping__title">free shipping</h2>
-            <span class="shipping__description"
+            <span class="description-text shipping__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the</span
             ><a class="shipping__click-here-link" href="#">Click here</a>
@@ -178,7 +169,7 @@
             <h2 class="offer-of-the-month__title">
               phantom vison elite dynamic
             </h2>
-            <span class="offer-of-the-month__description"
+            <span class="description-text offer-of-the-month__description"
               >Lorem Ipsum is simply dummy text of the printing and type setting
               industry. Lorem Ipsum has been the industry's Lorem Ipsum is
               simply dummy text of the</span
@@ -266,33 +257,37 @@
             </div>
           </li>
         </ul>
-        <ul class="bannerList">
-          <li id="discountBox">
-            <h2>men's running shoes</h2>
-            <p>
+        <ul class="banner-list">
+          <li class="banner-list__discount-box">
+            <h2 class="banner-list__discount-title">men's running shoes</h2>
+            <p class="banner-list__discount-description">
               sign up now and <br />
               get 50% off
             </p>
             <button class="click-here-button">click here</button>
           </li>
-          <li id="glassesBox">
-            <img src="./assets/images/items/Image (4).png" alt="" />
-            <h2>free shipping</h2>
-            <div class="priceContainer">
-              <p id="newPrice">$ 100.00</p>
-              <p id="oldPrice">$ 200</p>
+          <li class="product">
+            <img
+              class="product__image"
+              src="./assets/images/items/Image (4).png"
+              alt=""
+            />
+            <h2 class="product__name">free shipping</h2>
+            <div class="product__price">
+              <p class="product__new-price">$ 100.00</p>
+              <p class="product__old-price">$ 200</p>
             </div>
             <div class="overlay">
               <button class="shop-now-button">shop now</button>
             </div>
           </li>
-          <li id="runBannerBox">
-            <h2>
+          <li class="banner-list__runner-box">
+            <h2 class="banner-list__runner-title">
               run, <br />
               eat, sleep <br />
               and repeat
             </h2>
-            <button class="shop-now-button">shop now</button>
+            <button class="shop-now-button shop-now-button--aqua">shop now</button>
           </li>
         </ul>
         <ul class="item-list">
@@ -346,7 +341,7 @@
           </li>
         </ul>
         <div class="click-here-banner">click here</div>
-        <ul class="discipilnes-gallery">
+        <ul class="flex-wrap discipilnes-gallery">
           <li class="discipilnes-gallery__item">
             <img
               class="discipilnes-gallery__image"
@@ -404,87 +399,87 @@
             />
           </li>
         </ul>
-        <ul class="comanies-logo">
-          <li class="comanies-logo__item">
+        <ul class="flex-wrap companies-logo">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo.png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo (1).png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo (2).png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo (3).png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo.png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo (1).png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo (2).png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo (3).png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo.png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo (1).png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo (2).png"
               alt=""
             />
           </li>
-          <li class="comanies-logo__item">
+          <li class="companies-logo__item">
             <img
-              class="comanies-logo__image"
+              class="companies-logo__image"
               src="./assets/images/logos/brand-logo (3).png"
               alt=""
             />
@@ -495,46 +490,46 @@
     <footer class="footer">
       <div class="footer__footer-container">
         <div>
-          <h4>shops</h4>
+          <h4 class="footer__title">shops</h4>
           <div class="footer__shop-links">
-            <a href="#">New in</a>
-            <a href="#">Women</a>
-            <a href="#">Schuhe Shoes</a>
-            <a href="#">Bags & Accessories</a>
-            <a href="#">Men</a>
-            <a href="#">Top Braands</a>
-            <a href="#">Sale & Special Offers</a>
-            <a href="#">Lookbook</a>
+            <a class="footer__link" href="#">New in</a>
+            <a class="footer__link" href="#">Women</a>
+            <a class="footer__link" href="#">Schuhe Shoes</a>
+            <a class="footer__link" href="#">Bags & Accessories</a>
+            <a class="footer__link" href="#">Men</a>
+            <a class="footer__link" href="#">Top Braands</a>
+            <a class="footer__link" href="#">Sale & Special Offers</a>
+            <a class="footer__link" href="#">Lookbook</a>
           </div>
         </div>
         <div>
-          <h4>information</h4>
+          <h4 class="footer__title">information</h4>
           <div class="footer__information-links">
-            <a href="#">About us</a>
-            <a href="#">Customer Service</a>
-            <a href="#">New Collection</a>
-            <a href="#">Best Sellers</a>
-            <a href="#">Manufactures</a>
-            <a href="#">Pricacy policy</a>
-            <a href="#">Terms & condition</a>
-            <a href="#">Blog</a>
+            <a class="footer__link" href="#">About us</a>
+            <a class="footer__link" href="#">Customer Service</a>
+            <a class="footer__link" href="#">New Collection</a>
+            <a class="footer__link" href="#">Best Sellers</a>
+            <a class="footer__link" href="#">Manufactures</a>
+            <a class="footer__link" href="#">Pricacy policy</a>
+            <a class="footer__link" href="#">Terms & condition</a>
+            <a class="footer__link" href="#">Blog</a>
           </div>
         </div>
         <div>
-          <h4>customer service</h4>
+          <h4 class="footer__title">customer service</h4>
           <div class="footer__customer-service-links">
-            <a href="#">Search Terms</a>
-            <a href="#">Advanced Search</a>
-            <a href="#">Orders and Returns</a>
-            <a href="#">Contact us</a>
-            <a href="#">RSS</a>
-            <a href="#">Help & FAQs</a>
-            <a href="#">Consultat</a>
-            <a href="#">Store Locations</a>
+            <a class="footer__link" href="#">Search Terms</a>
+            <a class="footer__link" href="#">Advanced Search</a>
+            <a class="footer__link" href="#">Orders and Returns</a>
+            <a class="footer__link" href="#">Contact us</a>
+            <a class="footer__link" href="#">RSS</a>
+            <a class="footer__link" href="#">Help & FAQs</a>
+            <a class="footer__link" href="#">Consultat</a>
+            <a class="footer__link" href="#">Store Locations</a>
           </div>
         </div>
         <div>
-          <h4>stay connected</h4>
+          <h4 class="footer__title">stay connected</h4>
           <div class="footer__social-icons">
             <ul>
               <li>
@@ -558,7 +553,7 @@
             </ul>
           </div>
           <div class="footer__newsletter">
-            <h4>newsletter sign up</h4>
+            <h4 class="footer__title">newsletter sign up</h4>
             <input type="text" class="footer__email-input" />
             <button class="shop-now-button">shop now</button>
           </div>

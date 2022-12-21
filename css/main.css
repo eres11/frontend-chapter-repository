@@ -1,0 +1,55 @@
+@import url(./navigation-style.css);
+@import url(./header-style.css);
+@import url(./footer-style.css);
+@import url(./offer-of-the-month-style.css);
+@import url(./product-component-style.css);
+@import url(./shipping-component-style.css);
+@import url(./shop-now-button-style.css);
+@import url(./discipilnes-gallery-style.css);
+@import url(./logo-image-style.css);
+@import url(./banners-section-style.css);
+@import url(./click-here-button-style.css);
+
+@import url(./utils/item-list-style.css);
+@import url(./utils/description-text-style.css);
+@import url(./utils/flex-wrap.css);
+
+@font-face {
+  font-family: Poppins;
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(/assets/fonts/Poppins-Bold.ttf);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.offer-container {
+  margin: -80px 100px 0px 80px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.click-here-banner {
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(55, 83, 218);
+  padding: 20px 0px 20px 0px;
+}

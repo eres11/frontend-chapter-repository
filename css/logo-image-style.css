@@ -1,4 +1,4 @@
-.comanies-logo__item{
+.companies-logo__item{
     position: relative;
     background-color: white;
     border-color: lightgrey;
@@ -7,16 +7,19 @@
     width: 16.6666666%;
   }
   
-  .comanies-logo__item:after{
+  .companies-logo__item:after{
     content: "";
     display: block;
     padding-bottom: 100%;
   }
   
-  .comanies-logo__image {
-    padding: 20% 0% 0% 20%; 
+  .companies-logo__image {
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
     position: absolute;
-    height: 70%;
-    width: 80%;
+    width: 70%;
     filter: grayscale(100%);
+    padding-top: 25%;
   }

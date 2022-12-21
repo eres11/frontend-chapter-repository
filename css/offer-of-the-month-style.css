@@ -11,11 +11,6 @@
 }
 
 .offer-of-the-month__description {
-  display: block;
-  text-align: center;
-  font-size: 13px;
-  font-family: "Montserrat";
-  color: grey;
   padding: 5px 25px 20px 20px;
   margin-left: 100px;
   margin-right: 100px;
