@@ -7,6 +7,8 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .navigation__links {
@@ -15,7 +17,8 @@
 }
 
 .navigation__burger-icon {
-  padding: 0px 20px 0px 20px;
+  padding: 0px 8px 0px 8px;
+  min-width: 40px;
 }
 
 .navigation__logo-link {
@@ -31,6 +34,7 @@
 
 .navigation__categories {
   display: flex;
+  padding-right: 20px;
 }
 
 .navigation__link {
@@ -38,12 +42,12 @@
   font-size: 13px;
   color: white;
   text-decoration: none;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .navigation__icons {
   display: flex;
-  align-items: center;
+  min-width: max-content;
   border-left: 1px solid grey;
 }
 
@@ -51,7 +55,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  padding: 0px 40px 0px 30px;
+  padding: 0px 20px 0px 30px;
 }
 
 .navigation__cart-button {
@@ -66,4 +70,41 @@
   border: none;
   cursor: pointer;
   padding: 0px 20px 0px 0px;
+}
+
+
+@media (min-width: 576px) {
+  .navigation {
+    display: flex;
+    text-transform: uppercase;
+    height: 55px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navigation__burger-icon {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .navigation__link {
+    font-family: "Montserrat";
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+
+  .navigation__social-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 40px 0px 30px;
+  }
+
+  .navigation__icons {
+    display: flex;
+  }
 }

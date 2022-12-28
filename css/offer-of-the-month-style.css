@@ -1,5 +1,6 @@
 .offer-of-the-month {
   display: flex;
+  flex-direction: column;
   background-color: rgb(243, 238, 238);
 }
 
@@ -8,12 +9,13 @@
   flex-basis: 100%;
   background-position: 28%;
   background-size: cover;
+  padding-top: 300px;
 }
 
 .offer-of-the-month__description {
   padding: 5px 25px 20px 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .offer-of-the-month__title {
@@ -22,10 +24,10 @@
   font-family: "Bebas Neue";
   font-size: 28px;
   font-weight: 500;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   color: rgb(13, 46, 87);
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .offer-of-the-month__subtitle {
@@ -33,7 +35,7 @@
   text-align: center;
   font-family: "Poppins";
   font-size: 20px;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 25px;
   color: rgb(97, 97, 97);
 }
@@ -95,4 +97,29 @@
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
+}
+
+@media (min-width: 576px) {
+  .offer-of-the-month {
+    flex-direction: row;
+  }
+
+  .offer-of-the-month__sportsman {
+    padding-top: 0px;
+  }
+
+  .offer-of-the-month__title {
+    padding-bottom: 25px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .offer-of-the-month__description {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .offer-of-the-month__subtitle {
+    padding-top: 100px;
+  }
 }

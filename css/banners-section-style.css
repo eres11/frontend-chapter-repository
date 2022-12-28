@@ -1,5 +1,6 @@
 .banner-list {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
 }
 
@@ -8,7 +9,6 @@
   border-color: lightgrey;
   border-style: solid;
   border-width: 1px;
-  width: 25%;
   position: relative;
 }
 
@@ -21,7 +21,6 @@
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
-  width: 25%;
 }
 
 .banner-list__discount-title {
@@ -52,6 +51,7 @@
   flex-grow: 1;
   width: 50%;
   background-size: cover;
+  padding-bottom: 65px;
 }
 
 .banner-list__runner-title {
@@ -60,7 +60,8 @@
   font-style: italic;
   letter-spacing: 0.1em;
   padding-top: 15px;
-  margin-left: 40px;
+  padding-bottom: 10px;
+  margin-left: 5px;
   text-align: left;
   font-family: "Bebas Neue";
 }
@@ -82,10 +83,23 @@
   opacity: 0.7;
 }
 
-
-
 .overlay .shop-now-button {
   top: 40%;
   /* opacity: 1; */
   position: relative;
+}
+
+@media (min-width: 576px) {
+  .banner-list .product {
+    width: 25%;
+  }
+
+  .banner-list__discount-box {
+    width: 25%;
+  }
+
+  .banner-list__runner-title {
+    padding-bottom: 0px;
+    margin-left: 40px;
+  }
 }

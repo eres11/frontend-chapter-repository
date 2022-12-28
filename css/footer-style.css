@@ -7,11 +7,20 @@
   background-repeat: no-repeat;
 }
 
+.footer__separator {
+  box-sizing: border-box;
+  margin: 80px 0px 0px 0px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+  width: 100%;
+}
+
 .footer__footer-container {
   display: flex;
-  padding-left: 30px;
-  margin: 0px 100px 0px 80px;
-  gap: 100px;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  margin: 0px 20px 0px 20px;
 }
 
 .footer__link {
@@ -19,6 +28,8 @@
   color: white;
   text-decoration: none;
   padding-top: 13px;
+  padding-right: 20px;
+  text-decoration: underline;
 }
 
 .footer__title {
@@ -26,34 +37,34 @@
   text-transform: uppercase;
   font-size: 25px;
   color: rgb(55, 83, 218);
-  padding-bottom: 30px;
+  padding-bottom: 5px;
+  padding-top: 40px;
 }
 
 .footer__shop-links {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .footer__information-links {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .footer__customer-service-links {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .footer__social-icons ul {
   display: flex;
+  min-width: max-content;
+  padding-top: 10px;
   gap: 10px;
 }
 
 .footer__newsletter {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .footer__newsletter h4 {
@@ -77,21 +88,58 @@
 }
 
 .footer__rights {
-  display: flex;
-  justify-content: space-between;
-  margin: 50px 100px 0px 80px;
+  margin: 20px 20px 0px 20px;
   color: rgb(255, 255, 255);
 }
 
-.footer__separator {
-  box-sizing: border-box;
-  margin: 80px 0px 0px 0px;
-  border: none;
-  background-color: rgb(255, 255, 255);
-  height: 1px;
-  width: 100%;
+.footer__card-icons {
+  padding-top: 20px;
 }
 
 .footer__newsletter .shop-now-button {
   margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .footer__footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 30px;
+    margin: 0px 100px 0px 80px;
+    gap: 100px;
+  }
+
+  .footer__title {
+    padding-bottom: 30px;
+  }
+
+  .footer__newsletter {
+    padding-top: 50px;
+  }
+
+  .footer__newsletter h4 {
+    padding-bottom: 10px;
+  }
+
+  .footer__shop-links {
+    flex-direction: column;
+  }
+
+  .footer__customer-service-links {
+    flex-direction: column;
+  }
+
+  .footer__information-links {
+    flex-direction: column;
+  }
+
+  .footer__rights {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px 0px 80px;
+  }
+
+  .footer__link {
+    text-decoration: none;
+  }
 }

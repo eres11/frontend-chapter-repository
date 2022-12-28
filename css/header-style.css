@@ -1,9 +1,9 @@
 .header__image{
     background: url(/assets/images/banners/Runner.png);
     flex-basis: 100%;
-    background-position: 28%;
+    background-position: 45%;
     background-size: cover;
-    padding: 350px 0px 150px 0px;
+    padding: 50px 0px 350px 0px;
 }
 
 .header__title {
@@ -12,13 +12,10 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
-    font-size: 120px;
-    display: flex;
-    margin: 0px 0px 0px 150px;
-    line-height: 90px;
+    text-align: left;
+    font-size: 60px;
+    margin: 20px 0px 0px 20px;
   }
-
 
   .header__subtitle{
     font-weight: 500;
@@ -27,13 +24,36 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: left;
+    font-size: 18px;
+    margin: 5px 0px 0px 20px;
+  }
+
+  .header__image .shop-now-button {
+    margin: 10px 0px 0px 5px;
+  }
+
+@media (min-width: 576px) {
+  .header__image {
+    background-position: 28%;
+    padding: 350px 0px 150px 0px;
+  }
+
+  .header__title {
+    text-align: center;
+    font-size: 120px;
+    display: flex;
+    margin: 0px 0px 0px 150px;
+    line-height: 90px;
+  }
+  .header__subtitle{
     text-align: center;
     font-size: 18px;
     display: flex;
-    padding: 0px 0px 0px 0px;
     margin: 15px 0px 0px 160px;
   }
 
   .header__image .shop-now-button {
     margin: 30px 0px 0px 290px;
   }
+}

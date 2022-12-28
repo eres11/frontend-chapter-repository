@@ -24,7 +24,7 @@
   src: url(/assets/fonts/Poppins-Bold.ttf);
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -37,7 +37,7 @@ img {
 }
 
 .offer-container {
-  margin: -80px 100px 0px 80px;
+  margin: -80px 10px 0px 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -52,4 +52,10 @@ img {
   font-weight: bolder;
   color: rgb(55, 83, 218);
   padding: 20px 0px 20px 0px;
+}
+
+@media (min-width: 576px) {
+  .offer-container {
+    margin: -80px 100px 0px 80px;
+  }
 }

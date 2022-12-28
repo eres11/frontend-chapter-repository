@@ -1,4 +1,13 @@
 .item-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .item-list {
     display: flex;
+    flex-wrap: nowrap;
     text-align: center;
   }
+}
