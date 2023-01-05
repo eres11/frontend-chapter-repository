@@ -13,7 +13,7 @@
     text-decoration: none;
     text-transform: uppercase;
     text-align: left;
-    font-size: 60px;
+    font-size: 40px;
     margin: 20px 0px 0px 20px;
   }
 
@@ -25,35 +25,36 @@
     text-decoration: none;
     text-transform: uppercase;
     text-align: left;
-    font-size: 18px;
+    font-size: 14px;
     margin: 5px 0px 0px 20px;
+    padding-bottom: 10px;
   }
 
   .header__image .shop-now-button {
     margin: 10px 0px 0px 5px;
   }
 
-@media (min-width: 576px) {
+@media (min-width: 575px) {
   .header__image {
     background-position: 28%;
-    padding: 350px 0px 150px 0px;
+    padding: 250px 0px 150px 0px;
   }
 
   .header__title {
     text-align: center;
     font-size: 120px;
     display: flex;
-    margin: 0px 0px 0px 150px;
+    margin: 15px 0px 0px 40px;
     line-height: 90px;
   }
   .header__subtitle{
     text-align: center;
     font-size: 18px;
     display: flex;
-    margin: 15px 0px 0px 160px;
+    margin: 15px 0px 0px 50px;
   }
 
   .header__image .shop-now-button {
-    margin: 30px 0px 0px 290px;
+    margin: 30px 0px 0px 200px;
   }
 }

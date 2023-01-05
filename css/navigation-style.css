@@ -107,4 +107,40 @@
   .navigation__icons {
     display: flex;
   }
+
+  @media (min-width: 768px) {
+    .navigation {
+      display: flex;
+      text-transform: uppercase;
+      height: 55px;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    .navigation__burger-icon {
+      padding: 0px 20px 0px 20px;
+    }
+  
+    .navigation__link {
+      font-family: "Montserrat";
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+  
+    .navigation__social-icons {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 0px 40px 0px 30px;
+    }
+  
+    .navigation__icons {
+      display: flex;
+    }
+   }
 }

@@ -4,10 +4,10 @@
   text-align: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) { 
   .item-list {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
   }
-}
+ }

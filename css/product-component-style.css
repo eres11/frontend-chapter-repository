@@ -42,3 +42,9 @@
   padding-top: 15px;
   color: rgb(129, 129, 129);
 }
+
+@media (min-width: 768px) {
+  .product{
+    max-width: 50%;
+  }
+}
