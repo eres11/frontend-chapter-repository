@@ -1,0 +1,67 @@
+@import "./reset";
+@import "./navigation-style";
+@import "./header-style";
+@import "./footer-style";
+@import "./offer-of-the-month-style";
+@import "./product-component-style";
+@import "./shipping-component-style";
+@import "./shop-now-button-style";
+@import "./discipilnes-gallery-style";
+@import "./logo-image-style";
+@import "./banners-section-style";
+@import "./click-here-button-style";
+@import "./utils/item-list-style";
+@import "./utils/description-text-style";
+@import "./utils/flex-wrap";
+
+@font-face {
+  font-family: Poppins;
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(/assets/fonts/Poppins-Bold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.offer-container {
+  margin: -80px 10px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.click-here-banner {
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(55, 83, 218);
+  padding: 20px 0px 20px 0px;
+}
+
+@media (min-width: 576px) {
+  .offer-container {
+    margin: -80px 50px 0px 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .offer-container {
+    margin: -80px 100px 0px 80px;
+  }
+}

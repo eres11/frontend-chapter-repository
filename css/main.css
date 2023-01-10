@@ -1,29 +1,859 @@
-@import url(./navigation-style.css);
-@import url(./header-style.css);
-@import url(./footer-style.css);
-@import url(./offer-of-the-month-style.css);
-@import url(./product-component-style.css);
-@import url(./shipping-component-style.css);
-@import url(./shop-now-button-style.css);
-@import url(./discipilnes-gallery-style.css);
-@import url(./logo-image-style.css);
-@import url(./banners-section-style.css);
-@import url(./click-here-button-style.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-@import url(./utils/item-list-style.css);
-@import url(./utils/description-text-style.css);
-@import url(./utils/flex-wrap.css);
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navigation {
+  display: flex;
+  text-transform: uppercase;
+  height: 55px;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.navigation__links {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__burger-icon {
+  padding: 0px 8px 0px 8px;
+  min-width: 40px;
+}
+
+.navigation__logo-link {
+  font-weight: bold;
+  font-family: "PoppinsBold";
+  color: white;
+  text-decoration: none;
+  font-size: 33px;
+  padding: 0px 20px 0px 20px;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+.navigation__categories {
+  display: flex;
+  padding-right: 20px;
+}
+
+.navigation__link {
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navigation__icons {
+  display: flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  border-left: 1px solid grey;
+}
+
+.navigation__social-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 20px 0px 30px;
+}
+
+.navigation__cart-button {
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0px 20px 0px 0px;
+}
+
+.navigation__search-button {
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0px 20px 0px 0px;
+}
+
+@media (min-width: 576px) {
+  .navigation {
+    display: flex;
+    text-transform: uppercase;
+    height: 55px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  .navigation__burger-icon {
+    padding: 0px 20px 0px 20px;
+  }
+  .navigation__link {
+    font-family: "Montserrat";
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+  .navigation__social-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 40px 0px 30px;
+  }
+  .navigation__icons {
+    display: flex;
+  }
+}
+@media (min-width: 576px) and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    text-transform: uppercase;
+    height: 55px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  .navigation__burger-icon {
+    padding: 0px 20px 0px 20px;
+  }
+  .navigation__link {
+    font-family: "Montserrat";
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+  .navigation__social-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 40px 0px 30px;
+  }
+  .navigation__icons {
+    display: flex;
+  }
+}
+.header__image {
+  background: url(/assets/images/banners/Runner.png);
+  flex-basis: 100%;
+  background-position: 45%;
+  background-size: cover;
+  padding: 50px 0px 350px 0px;
+}
+
+.header__title {
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 40px;
+  margin: 20px 0px 0px 20px;
+}
+
+.header__subtitle {
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 0.3em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  margin: 5px 0px 0px 20px;
+  padding-bottom: 10px;
+}
+
+.header__image .shop-now-button {
+  margin: 10px 0px 0px 5px;
+}
+
+@media (min-width: 575px) {
+  .header__image {
+    background-position: 28%;
+    padding: 250px 0px 150px 0px;
+  }
+  .header__title {
+    text-align: center;
+    font-size: 120px;
+    display: flex;
+    margin: 15px 0px 0px 40px;
+    line-height: 90px;
+  }
+  .header__subtitle {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    margin: 15px 0px 0px 50px;
+  }
+  .header__image .shop-now-button {
+    margin: 30px 0px 0px 200px;
+  }
+}
+.footer {
+  background: url(/assets/images/Footer\ BG.png);
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin-top: -100px;
+  margin-left: -1px;
+  background-repeat: no-repeat;
+}
+
+.footer__separator {
+  box-sizing: border-box;
+  margin: 80px 0px 0px 0px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+  width: 100%;
+}
+
+.footer__footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  margin: 0px 20px 0px 20px;
+}
+
+.footer__link {
+  font-family: "Poppins";
+  color: white;
+  text-decoration: none;
+  padding-top: 13px;
+  padding-right: 20px;
+  text-decoration: underline;
+}
+
+.footer__title {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 25px;
+  color: rgb(55, 83, 218);
+  padding-bottom: 5px;
+  padding-top: 40px;
+}
+
+.footer__shop-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__information-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__customer-service-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__social-icons ul {
+  display: flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.footer__newsletter {
+  padding-top: 10px;
+}
+
+.footer__newsletter h4 {
+  padding-bottom: 10px;
+}
+
+.footer__email-input {
+  color: white;
+  background-color: rgb(61, 63, 72);
+  border: none;
+  border-radius: 30px;
+  font-size: 25px;
+  width: 80%;
+  padding-left: 15px;
+  outline-color: white;
+}
+
+.footer__rights-section {
+  color: black;
+  opacity: 0.5;
+}
+
+.footer__rights {
+  margin: 20px 20px 0px 20px;
+  color: rgb(255, 255, 255);
+}
+
+.footer__card-icons {
+  padding-top: 20px;
+}
+
+.footer__newsletter .shop-now-button {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .footer__footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 30px;
+    margin: 0px 100px 0px 80px;
+    gap: 100px;
+  }
+  .footer__title {
+    padding-bottom: 30px;
+  }
+  .footer__newsletter {
+    padding-top: 50px;
+  }
+  .footer__newsletter h4 {
+    padding-bottom: 10px;
+  }
+  .footer__shop-links {
+    flex-direction: column;
+  }
+  .footer__customer-service-links {
+    flex-direction: column;
+  }
+  .footer__information-links {
+    flex-direction: column;
+  }
+  .footer__rights {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px 0px 80px;
+  }
+  .footer__link {
+    text-decoration: none;
+  }
+}
+.offer-of-the-month {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 238, 238);
+}
+
+.offer-of-the-month__sportsman {
+  background: url(/assets/images/banners/ImageSportsman.png);
+  flex-basis: 100%;
+  background-position: 28%;
+  background-size: cover;
+  padding-top: 300px;
+}
+
+.offer-of-the-month__description {
+  padding: 5px 25px 20px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.offer-of-the-month__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: rgb(13, 46, 87);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.offer-of-the-month__subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  color: rgb(97, 97, 97);
+}
+
+.offer-of-the-month__price-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offer-of-the-month__new-price {
+  color: rgb(57, 84, 217);
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.offer-of-the-month__old-price {
+  color: black;
+  font-size: 30px;
+  text-decoration: line-through;
+  padding-top: 35px;
+}
+
+.offer-of-the-month__countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+.offer-of-the-month__time-item {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+  width: 90px;
+}
+
+.offer-of-the-month__time {
+  font-size: 40px;
+  padding-top: 8px;
+}
+
+.offer-of-the-month__time-unit {
+  font-size: small;
+  padding-top: 8px;
+}
+
+.offer-of-the-month__dots {
+  padding-top: 8px;
+}
+
+.offer-of-the-month__shop-now-button-continer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+@media (min-width: 576px) {
+  .offer-of-the-month__sportsman {
+    background-position: 28%;
+    background-size: cover;
+    padding-top: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .offer-of-the-month {
+    flex-direction: row;
+  }
+  .offer-of-the-month__sportsman {
+    padding-top: 0px;
+  }
+  .offer-of-the-month__title {
+    padding-bottom: 25px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  .offer-of-the-month__description {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .offer-of-the-month__subtitle {
+    padding-top: 100px;
+  }
+}
+.product {
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 20px;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.product__name {
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: rgb(44, 59, 95);
+  text-align: left;
+  padding: 20px 0px 0px 30px;
+}
+
+.product__image {
+  max-width: 270px;
+  max-height: 150px;
+}
+
+.product__price {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -5px;
+  padding: 0px 0px 20px 30px;
+  gap: 10px;
+}
+
+.product__new-price {
+  color: rgb(57, 84, 217);
+  font-weight: 550;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.product__old-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  padding-top: 15px;
+  color: rgb(129, 129, 129);
+}
+
+@media (min-width: 768px) {
+  .product {
+    max-width: 50%;
+  }
+}
+.shipping {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.shipping__item {
+  background-color: white;
+  padding-bottom: 40px;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.shipping__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  padding-bottom: 15px;
+  color: rgb(44, 59, 95);
+}
+
+.shipping__description {
+  padding: 5px 25px 20px 20px;
+}
+
+.shipping__image {
+  padding: 25px 0px 25px 0px;
+  width: 44px;
+}
+
+.shipping__click-here-link {
+  color: #3753da;
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (min-width: 576px) {
+  .shipping {
+    flex-wrap: nowrap;
+  }
+}
+.shop-now-button {
+  color: white;
+  background-color: rgb(57, 83, 217);
+  border: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 13px;
+  border-radius: 30px;
+  padding: 12px 25px 12px 25px;
+}
+.shop-now-button--aqua {
+  background-color: aqua;
+  color: black;
+}
+
+.discipilnes-gallery__item {
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.discipilnes-gallery__image {
+  width: 100%;
+  height: 100%;
+  opacity: 0.56;
+}
+
+@media (min-width: 576px) {
+  .discipilnes-gallery__item {
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  .discipilnes-gallery__image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.56;
+  }
+}
+.companies-logo__item {
+  position: relative;
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  width: 33.3333333%;
+}
+
+.companies-logo__item:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.companies-logo__image {
+  position: absolute;
+  width: 70%;
+  filter: grayscale(100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 576px) {
+  .companies-logo__item {
+    position: relative;
+    background-color: white;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 16.6666666%;
+  }
+  .companies-logo__item:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+.banner-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.banner-list .product {
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+}
+
+.banner-list .product__image {
+  max-width: 220px;
+  padding-bottom: 25px;
+}
+
+.banner-list__discount-box {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.banner-list__discount-title {
+  font-size: 45px;
+  padding-top: 40px;
+  text-align: center;
+  font-family: "Bebas Neue";
+}
+
+.banner-list__discount-description {
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 0.3em;
+  font-size: 14px;
+  padding-top: 10px;
+  margin-left: 50px;
+  text-align: left;
+  line-height: 20px;
+}
+
+.banner-list .click-here-button {
+  margin: 20px 0px 30px -60px;
+}
+
+.banner-list__runner-box {
+  background: url(/assets/images/banners/Layer\ 17.png);
+  flex-grow: 1;
+  width: 50%;
+  background-size: cover;
+  padding-bottom: 65px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.banner-list__runner-title {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  margin-left: 5px;
+  text-align: left;
+  font-family: "Bebas Neue";
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(0, 0, 0);
+}
+
+.banner-list .product:hover .overlay {
+  opacity: 0.7;
+}
+
+.overlay .shop-now-button {
+  top: 40%;
+  /* opacity: 1; */
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .banner-list__discount-box {
+    width: 50%;
+  }
+  .banner-list__runner-box {
+    text-align: left;
+    padding-left: 40px;
+  }
+  .banner-list__runner-title {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 55px;
+  }
+}
+@media (min-width: 992px) {
+  .banner-list .product {
+    width: 25%;
+  }
+  .banner-list__discount-box {
+    width: 25%;
+  }
+  .banner-list__runner-title {
+    padding-bottom: 0px;
+    margin-left: 40px;
+    font-size: 55px;
+  }
+}
+.click-here-button {
+  color: white;
+  background-color: rgb(57, 83, 217);
+  border: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 13px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 12px 25px 12px 25px;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .item-list {
+    flex-wrap: nowrap;
+  }
+}
+
+.description-text {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: grey;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 @font-face {
   font-family: Poppins;
   src: url(/assets/fonts/Poppins-Regular.ttf);
 }
-
 @font-face {
   font-family: PoppinsBold;
   src: url(/assets/fonts/Poppins-Bold.ttf);
 }
-
 * {
   box-sizing: border-box;
 }
@@ -59,9 +889,8 @@ img {
     margin: -80px 50px 0px 50px;
   }
 }
-
 @media (min-width: 992px) {
   .offer-container {
     margin: -80px 100px 0px 80px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
