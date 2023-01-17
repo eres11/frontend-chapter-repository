@@ -1,9 +1,3 @@
-.banner-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
 .banner-list .product {
   background-color: white;
   border-color: lightgrey;
@@ -21,7 +15,6 @@
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
-  width: 100%;
 }
 
 .banner-list__discount-title {
@@ -42,14 +35,13 @@
   line-height: 20px;
 }
 
-.banner-list .click-here-button {
-  margin: 20px 0px 30px -60px;
+.banner-list__click-here-button {
+  margin: 20px 0px 30px 0px;
 }
 
 .banner-list__runner-box {
   background: url(/assets/images/banners/Layer\ 17.png);
   flex-grow: 1;
-  width: 50%;
   background-size: cover;
   padding-bottom: 65px;
   text-align: left;
@@ -92,10 +84,6 @@
 }
 
 @media (min-width: 576px) {
-  .banner-list__discount-box {
-    width: 50%;
-  }
-
   .banner-list__runner-box {
     text-align: left;
     padding-left: 40px;
@@ -109,14 +97,6 @@
 }
 
 @media (min-width: 992px) {
-  .banner-list .product {
-    width: 25%;
-  }
-
-  .banner-list__discount-box {
-    width: 25%;
-  }
-
   .banner-list__runner-title {
     padding-bottom: 0px;
     margin-left: 40px;

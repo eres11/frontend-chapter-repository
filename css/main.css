@@ -524,6 +524,7 @@ table {
   padding-bottom: 20px;
   width: 100%;
   padding-top: 30px;
+  text-align: center;
 }
 
 .product__name {
@@ -562,11 +563,6 @@ table {
   color: rgb(129, 129, 129);
 }
 
-@media (min-width: 768px) {
-  .product {
-    max-width: 50%;
-  }
-}
 .shipping {
   display: flex;
   flex-wrap: wrap;
@@ -627,7 +623,6 @@ table {
 }
 
 .discipilnes-gallery__item {
-  width: 50%;
   text-align: center;
   box-sizing: border-box;
   background-color: black;
@@ -639,19 +634,6 @@ table {
   opacity: 0.56;
 }
 
-@media (min-width: 576px) {
-  .discipilnes-gallery__item {
-    width: 25%;
-    text-align: center;
-    box-sizing: border-box;
-    background-color: black;
-  }
-  .discipilnes-gallery__image {
-    width: 100%;
-    height: 100%;
-    opacity: 0.56;
-  }
-}
 .companies-logo__item {
   position: relative;
   background-color: white;
@@ -691,12 +673,6 @@ table {
     padding-bottom: 100%;
   }
 }
-.banner-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
 .banner-list .product {
   background-color: white;
   border-color: lightgrey;
@@ -714,7 +690,6 @@ table {
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
-  width: 100%;
 }
 
 .banner-list__discount-title {
@@ -735,14 +710,13 @@ table {
   line-height: 20px;
 }
 
-.banner-list .click-here-button {
-  margin: 20px 0px 30px -60px;
+.banner-list__click-here-button {
+  margin: 20px 0px 30px 0px;
 }
 
 .banner-list__runner-box {
   background: url(/assets/images/banners/Layer\ 17.png);
   flex-grow: 1;
-  width: 50%;
   background-size: cover;
   padding-bottom: 65px;
   text-align: left;
@@ -785,9 +759,6 @@ table {
 }
 
 @media (min-width: 576px) {
-  .banner-list__discount-box {
-    width: 50%;
-  }
   .banner-list__runner-box {
     text-align: left;
     padding-left: 40px;
@@ -799,12 +770,6 @@ table {
   }
 }
 @media (min-width: 992px) {
-  .banner-list .product {
-    width: 25%;
-  }
-  .banner-list__discount-box {
-    width: 25%;
-  }
   .banner-list__runner-title {
     padding-bottom: 0px;
     margin-left: 40px;
@@ -821,17 +786,6 @@ table {
   text-align: center;
   border-radius: 30px;
   padding: 12px 25px 12px 25px;
-}
-
-.item-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-@media (min-width: 992px) {
-  .item-list {
-    flex-wrap: nowrap;
-  }
 }
 
 .description-text {

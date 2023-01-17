@@ -6,6 +6,7 @@
   padding-bottom: 20px;
   width: 100%;
   padding-top: 30px;
+  text-align: center;
 }
 .product__name {
   text-transform: uppercase;
@@ -41,10 +42,4 @@
   text-decoration: line-through;
   padding-top: 15px;
   color: rgb(129, 129, 129);
-}
-
-@media (min-width: 768px) {
-  .product{
-    max-width: 50%;
-  }
 }
