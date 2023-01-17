@@ -522,7 +522,7 @@ table {
   border-style: solid;
   border-width: 1px;
   padding-bottom: 20px;
-  width: 100%;
+  height: 100%;
   padding-top: 30px;
   text-align: center;
 }
@@ -626,6 +626,7 @@ table {
   text-align: center;
   box-sizing: border-box;
   background-color: black;
+  height: 100%;
 }
 
 .discipilnes-gallery__image {
@@ -690,6 +691,7 @@ table {
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
+  height: 100%;
 }
 
 .banner-list__discount-title {
@@ -748,7 +750,7 @@ table {
   background-color: rgb(0, 0, 0);
 }
 
-.banner-list .product:hover .overlay {
+.banner-list product:hover .overlay {
   opacity: 0.7;
 }
 
