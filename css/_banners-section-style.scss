@@ -16,12 +16,12 @@
   background-color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
   height: 100%;
+  padding-left: 40px;
 }
 
 .banner-list__discount-title {
   font-size: 45px;
   padding-top: 40px;
-  text-align: center;
   font-family: "Bebas Neue";
 }
 
@@ -30,8 +30,8 @@
   font-family: "Poppins";
   letter-spacing: 0.3em;
   font-size: 14px;
-  padding-top: 10px;
-  margin-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 20px;
   text-align: left;
   line-height: 20px;
 }
@@ -93,14 +93,6 @@
   .banner-list__runner-title {
     padding-bottom: 20px;
     padding-top: 30px;
-    font-size: 55px;
-  }
-}
-
-@media (min-width: 992px) {
-  .banner-list__runner-title {
-    padding-bottom: 0px;
-    margin-left: 40px;
     font-size: 55px;
   }
 }
