@@ -1,6 +1,4 @@
 .shipping {
-  display: flex;
-  flex-wrap: wrap;
   text-align: center;
 }
 
@@ -34,10 +32,4 @@
   font-family: "Montserrat";
   text-decoration: none;
   font-weight: bold;
-}
-
-@media (min-width: 576px) {
-  .shipping {
-    flex-wrap: nowrap;
-  }
 }
