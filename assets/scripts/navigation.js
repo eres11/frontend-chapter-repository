@@ -1,11 +1,8 @@
 const navigation = document.querySelector(".navigation");
+const hamburgerContainer = document.querySelector(".navigation__hamburger-lines");
 
 function toggleMenu() {
-  if (navigation.classList.contains("isOpen")) {
-    navigation.classList.remove("isOpen");
-  } else {
-    navigation.classList.add("isOpen");
-  }
+  navigation.classList.toggle("isOpen");
 }
 
-navigation.addEventListener("click", toggleMenu);
+hamburgerContainer.addEventListener("click", toggleMenu);

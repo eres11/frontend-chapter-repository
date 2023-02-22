@@ -9,9 +9,8 @@
   height: 55px;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
-}
 
-.navigation__logo-link {
+&__logo-link{
   font-weight: bold;
   font-family: "PoppinsBold";
   color: white;
@@ -22,6 +21,11 @@
   .isOpen & {
     color: #2c3b5f;
   }
+}
+}
+
+.navigation__logo-link {
+  
 }
 
 .navigation__logo {
@@ -76,7 +80,7 @@
   }
 }
 
-.navigation__links {
+.navigation__categories {
   transform: translate(-150%);
   position: fixed;
   transition: transform 0.2s;
@@ -85,31 +89,34 @@
   right: 0;
   bottom: 0;
   background: white;
-  list-style: none;
-  padding-top: 4rem;
   .isOpen & {
-    transform: translateY(0);
+    padding-top: 4rem;
+    transform: translate(0);
   }
 }
 
 .navigation__social-icons {
+  transform: translate(-150%);
   display: flex;
   position: fixed;
   transition: transform 0.2s;
   gap: 30px;
   margin-left: 3.5rem;
   padding-top: 20px;
+  .isOpen & {
+    transform: translate(0);
+  }
 }
 
-.navigation__item {
+.navigation__category {
   list-style: none;
   margin-left: 3rem;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
-  z-index: 2;
+  z-index: 1;
 }
 
-.navigation__link {
+.navigation__category-link {
   font-family: "Montserrat";
   font-size: 22px;
   font-weight: bold;
@@ -127,16 +134,16 @@
   background-color: Transparent;
   border: none;
   cursor: pointer;
-  z-index: 1;
+  z-index: 3;
 }
 
 .navigation__button-icons {
   display: flex;
   min-width: max-content;
   margin-top: 15px;
-  margin-right: 20px;
+  margin-right: 10px;
   gap: 15px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .isOpen .navigation__img-icon {
@@ -152,65 +159,97 @@
 @media (min-width: 992px) {
   .navigation {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   .navigation__hamburger-lines {
     display: none;
   }
 
-  .navigation__links {
-    transform: translate(0%);
-    position: absolute;
-    display: flex;
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: unset;
-    list-style: none;
-    padding-top: 0rem;
-    justify-content: space-around;
+  .navigation__button-icons{
+    order: 1;
   }
 
-  .navigation__link {
+  .navigation__categories {
+    transform: translate(0);
+    display: flex;
+    background: none;
+    position: static;
+  //   display: flex;
+    align-items: center;
+    border-left: 1px solid grey;
+  }
+
+  .navigation__category-link {
     font-family: "Montserrat";
     font-size: 13px;
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    // margin-left: 20px;
   }
 
   .navigation__social-icons {
+    transform: translate(0);
     display: flex;
-    position: unset;
+    position: static;
     align-items: center;
-    gap: 25px;
-    padding: 0px 40px 0px 40px;
-    margin-right: 20px;
-    margin-left: 20px;
+    gap: 30 px;
+    padding: 0px 20px 0px 20px;
+    // margin-right: 70px;
+    // margin-left: 20px;
     border-right: 1px solid grey;
     border-left: 1px solid grey;
   }
 
-  .navigation__button-icons{
-    gap: 25px;
+  .navigation__button-icons {
+    margin-right: 20px;
+    gap: 40px;
+
   }
 
-  .navigation__categories {
-    display: flex;
-    align-items: center;
-    margin-left: 90px;
-    border-left: 1px solid grey;    
-  }
-
-  .navigation__item {
-    margin-left: 0px;
-  }
-  
-  .navigation__logo{
-    position: absolute;
-    margin-left: 30px;
+  .navigation__logo {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
+
+// @media (min-width: 1200px) {
+//   .navigation__logo {
+//     margin-left: 25px;
+//   }
+
+//   .navigation__links {
+//     // left: 20px;
+//   }
+
+//   .navigation__social-icons {
+//     gap: 25px;
+//     // padding: 0px 40px 0px 40px;
+//     // margin-right: 20px;
+//   }
+
+//   .navigation__button-icons {
+//     gap: 25px;
+//   }
+// }
+
+// @media (min-width: 1400px) {
+//   .navigation__logo {
+//     // margin-left: 30px;
+//   }
+
+//   .navigation__links {
+//     // left: -80px;
+//   }
+
+//   .navigation__social-icons {
+//     gap: 35px;
+//     // padding: 0px 30px 0px 30px;
+//     // margin-right: -80px;
+//   }
+
+//   .navigation__button-icons {
+//     gap: 25px;
+//     margin-right: 15px;
+//   }
+// }
