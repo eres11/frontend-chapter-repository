@@ -75,7 +75,7 @@
     }
   }
 
-  &__categories {
+  &__menu {
     transform: translate(-150%);
     position: fixed;
     transition: transform 0.2s;
@@ -105,7 +105,7 @@
 
   &__category {
     list-style: none;
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
     z-index: 1;
@@ -167,13 +167,23 @@
       order: 1;
     }
 
-    &__categories {
+    &__menu {
       transform: translate(0);
       display: flex;
       background: none;
       position: static;
       align-items: center;
       border-left: 1px solid grey;
+      flex: 1;
+      justify-content: space-between;
+      padding-right: 25px;
+    }
+
+    &__categories {
+      display: flex;
+      background: none;
+      position: static;
+      align-items: center;
     }
 
     &__category-link {
@@ -181,7 +191,6 @@
       font-size: 13px;
       color: white;
       text-decoration: none;
-      // margin-left: 20px;
     }
 
     &__social-icons {
@@ -189,17 +198,15 @@
       display: flex;
       position: static;
       align-items: center;
-      gap: 30 px;
       padding: 0px 20px 0px 20px;
-      // margin-right: 70px;
-      // margin-left: 20px;
       border-right: 1px solid grey;
       border-left: 1px solid grey;
+      height: 100%;
     }
 
     &__button-icons {
       margin-right: 20px;
-      gap: 40px;
+      gap: 30px;
     }
 
     &__logo {
@@ -208,44 +215,3 @@
     }
   }
 }
-
-// @media (min-width: 1200px) {
-//   .navigation__logo {
-//     margin-left: 25px;
-//   }
-
-//   .navigation__links {
-//     // left: 20px;
-//   }
-
-//   .navigation__social-icons {
-//     gap: 25px;
-//     // padding: 0px 40px 0px 40px;
-//     // margin-right: 20px;
-//   }
-
-//   .navigation__button-icons {
-//     gap: 25px;
-//   }
-// }
-
-// @media (min-width: 1400px) {
-//   .navigation__logo {
-//     // margin-left: 30px;
-//   }
-
-//   .navigation__links {
-//     // left: -80px;
-//   }
-
-//   .navigation__social-icons {
-//     gap: 35px;
-//     // padding: 0px 30px 0px 30px;
-//     // margin-right: -80px;
-//   }
-
-//   .navigation__button-icons {
-//     gap: 25px;
-//     margin-right: 15px;
-//   }
-// }

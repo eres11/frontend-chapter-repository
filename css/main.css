@@ -122,7 +122,7 @@ table {
   background: #2c3b5f;
   transform: rotate(-35deg);
 }
-.navigation__categories {
+.navigation__menu {
   transform: translate(-150%);
   position: fixed;
   transition: transform 0.2s;
@@ -132,7 +132,7 @@ table {
   bottom: 0;
   background: white;
 }
-.isOpen .navigation__categories {
+.isOpen .navigation__menu {
   padding-top: 4rem;
   transform: translate(0);
 }
@@ -150,7 +150,7 @@ table {
 }
 .navigation__category {
   list-style: none;
-  margin-left: 3rem;
+  margin-left: 2rem;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   z-index: 1;
@@ -200,13 +200,22 @@ table {
   .navigation__button-icons {
     order: 1;
   }
-  .navigation__categories {
+  .navigation__menu {
     transform: translate(0);
     display: flex;
     background: none;
     position: static;
     align-items: center;
     border-left: 1px solid grey;
+    flex: 1;
+    justify-content: space-between;
+    padding-right: 25px;
+  }
+  .navigation__categories {
+    display: flex;
+    background: none;
+    position: static;
+    align-items: center;
   }
   .navigation__category-link {
     font-family: "Montserrat";
@@ -219,14 +228,14 @@ table {
     display: flex;
     position: static;
     align-items: center;
-    gap: 30 px;
     padding: 0px 20px 0px 20px;
     border-right: 1px solid grey;
     border-left: 1px solid grey;
+    height: 100%;
   }
   .navigation__button-icons {
     margin-right: 20px;
-    gap: 40px;
+    gap: 30px;
   }
   .navigation__logo {
     padding-left: 30px;
