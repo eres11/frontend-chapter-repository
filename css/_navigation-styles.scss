@@ -127,6 +127,20 @@
     z-index: 3;
   }
 
+  &__cart-preview {
+  display: none;
+    .cartIsOpen & {
+      display: block;
+      margin: 20px -10px 0px 0px;
+      background: white;
+      width: 120px;
+      position: absolute;
+      right: 30px;
+      border-radius: 3px;
+      padding: 20px;
+    }
+  }
+  
   &__button-icons {
     display: flex;
     min-width: max-content;

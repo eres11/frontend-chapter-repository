@@ -31,7 +31,7 @@
         <a class="navigation__logo-link" href="#">portpro</a>
       </div>
       <ul class="navigation__button-icons">
-        <li class="navigation__cart-icon">
+        <li class="navigation__cart-icon"> 
           <a href="#">
             <svg
               class="navigation__img-icon"
@@ -52,6 +52,14 @@
               />
             </svg>
           </a>
+          <div class="navigation__cart-preview">
+            <h2>Cart</h2>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
         </li>
         <li class="navigation__search-icon">
           <a href="#">
@@ -260,11 +268,6 @@
           </div>
         </div>
       </section>
-      <div
-        class="uppercase text-5xl font-bold text-center bg-[url('../assets/images/Footer\ BG.png')]"
-      >
-        tailwindcss test banner
-      </div>
       <section>
         <div class="offer-of-the-month">
           <div>
@@ -284,17 +287,17 @@
             <div class="offer-of-the-month__timer-container">
               <ul class="offer-of-the-month__countdown">
                 <li class="offer-of-the-month__time-item">
-                  <p class="offer-of-the-month__time">09</p>
+                  <p class="offer-of-the-month__time-hours"></p>
                   <p class="offer-of-the-month__dots">....</p>
                   <p class="offer-of-the-month__time-unit">hours</p>
                 </li>
                 <li class="offer-of-the-month__time-item">
-                  <p class="offer-of-the-month__time">56</p>
+                  <p class="offer-of-the-month__time-minutes"></p>
                   <p class="offer-of-the-month__dots">....</p>
                   <p class="offer-of-the-month__time-unit">minutes</p>
                 </li>
                 <li class="offer-of-the-month__time-item">
-                  <p class="offer-of-the-month__time">11</p>
+                  <p class="offer-of-the-month__time-seconds"></p>
                   <p class="offer-of-the-month__dots">....</p>
                   <p class="offer-of-the-month__time-unit">seconds</p>
                 </li>
@@ -660,12 +663,11 @@
       </section>
     </div>
     <footer
-      class="footer"
-    >
+      class="footer bg-repeat-round -mt-24 -m-px pt-36 pb-20 bg-[url('./assets/images/footer-bg.png')]">
       <div class="footer__footer-container mx-3 pl-2.5">
         <div>
           <h4 class="footer__title text-[#3753DA] text-[25px] font-['Poppins'] uppercase pb-1.5 pt-10">shops</h4>
-          <div class="footer__shop-links flex flex-wrap">
+          <div class="footer__shop-links flex flex-wrap md:flex-col">
             <a class="footer__link text-white underline font-['Poppins'] pt-3 pr-5" href="#">New in</a>
             <a class="footer__link text-white underline font-['Poppins'] pt-3 pr-5" href="#">Women</a>
             <a class="footer__link text-white underline font-['Poppins'] pt-3 pr-5" href="#">Schuhe Shoes</a>
@@ -750,4 +752,6 @@
     </footer>
   </body>
   <script src="assets/scripts/navigation.js"></script>
+  <script src="assets/scripts/cart.js"></script>
+  <script src="assets/scripts/counter.js"></script>
 </html>
