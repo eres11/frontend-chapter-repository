@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/eres11/frontend-chapter-repository/issues"
   },
-  "homepage": "https://github.com/eres11/frontend-chapter-repository#readme"
+  "type": "module",
+  "homepage": "https://github.com/eres11/frontend-chapter-repository#readme",
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  }
 }
